@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(mv:*)",
+      "Bash(python:*)",
+      "Bash(sed:*)",
+      "Bash(grep:*)",
+      "Bash(dir:*)",
+      "Bash(del:*)",
+      "Bash(rg:*)",
+      "WebSearch",
+      "WebFetch(domain:bentogrids.com)",
+      "Bash(git init:*)",
+      "Bash(git config:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

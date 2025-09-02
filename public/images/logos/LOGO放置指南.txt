@@ -1,0 +1,79 @@
+📋 Logo放置完整指南
+====================
+
+✅ 所有修改已完成！以下是详细的Logo放置指南：
+
+🏢 主公司Logo
+--------------
+📁 文件位置: public/images/logos/company-logo.png
+📐 推荐尺寸: 64x64px (正方形)
+🎨 格式要求: PNG格式，建议透明背景
+💻 显示位置: 首页顶部"赛育达学习系统"标题上方
+
+📚 题库Logo
+-----------
+📁 文件位置: public/images/logos/banks/
+📝 命名方式: 使用题库ID + .png 扩展名
+
+📋 完整的题库ID列表:
+===================
+
+🔧 增材制造系列:
+- additive-basic.png                    (增材制造-初级)
+- additive-inter.png                    (增材制造-中级)  
+- additiveManufacturingAdvanced.png     (增材制造-高级)
+
+🤖 机器人编程系列:
+ABB机器人:
+- robot-coding-abb-basic.png            (ABB机器人编程-初级)
+- robot-coding-abb-mid.png              (ABB机器人编程-中级)
+
+博诺机器人:
+- robot-coding-bnr-basic.png            (博诺机器人编程-初级)
+- robot-coding-bnr-mid.png              (博诺机器人编程-中级)
+
+发那科机器人:
+- robot-coding-fnk-mid.png              (发那科机器人编程-中级)
+- robot-coding-fnk-yl-basic.png         (发那科亚龙机器人编程-初级)
+- robot-coding-fnk-yl-mid.png           (发那科亚龙机器人编程-中级)
+
+汇博机器人:
+- robot-coding-hbr-basic.png            (汇博机器人编程-初级)
+- robot-coding-hbr-mid.png              (汇博机器人编程-中级)
+
+华数机器人:
+- robot-coding-hsr-basic.png            (华数机器人编程-初级)
+- robot-coding-hsr-mid.png              (华数机器人编程-中级)
+
+KUKA系列:
+- robot-coding-kkr-bn-basic.png         (KUKA博诺机器人编程-初级)
+- robot-coding-kkr-bn-mid.png           (KUKA博诺机器人编程-中级)
+- robot-coding-kkr-rz-basic.png         (KUKA锐智机器人编程-初级)
+- robot-coding-kkr-rz-mid.png           (KUKA锐智机器人编程-中级)
+- robot-coding-kkr-yl-basic.png         (KUKA亚龙机器人编程-初级)
+- robot-coding-kkr-yl-mid.png           (KUKA亚龙机器人编程-中级)
+
+亚龙机器人:
+- robot-coding-ylr-basic.png            (亚龙机器人编程-初级)
+- robot-coding-ylr-mid.png              (亚龙机器人编程-中级)
+
+💡 智能显示逻辑:
+================
+✨ 如果logo文件存在 → 显示实际的logo图片
+❌ 如果logo文件不存在 → 自动显示"LOGO"占位符
+
+🎯 Logo设计建议:
+===============
+📐 推荐尺寸: 32x32px 或 64x64px (正方形)
+🎨 背景: 透明背景效果最佳
+🖼️ 格式: PNG格式
+🌈 颜色: 简洁明了，与品牌色彩保持一致
+
+🚀 如何使用:
+============
+1️⃣ 将Logo文件按照上述命名规范放入对应目录
+2️⃣ 确保文件名与题库ID完全匹配（注意大小写）
+3️⃣ 刷新浏览器页面即可看到Logo显示
+4️⃣ 如果Logo未显示，检查文件名是否正确
+
+🔄 项目运行中，可随时添加Logo文件，无需重启！
