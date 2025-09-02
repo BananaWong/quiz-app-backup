@@ -175,32 +175,4 @@ export const questionBank = [
 
 ## 📄 许可证
 
-本项目仅供学习和研究使用。
-
-## 🤝 贡献
-
-欢迎提交 Issue 和 Pull Request 来改进项目！
-
-### 开发流程
-1. Fork 项目
-2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 创建 Pull Request
-
-## 📞 支持
-
-如果您在使用过程中遇到问题，请：
-1. 查看项目文档
-2. 搜索已有的 Issues
-3. 创建新的 Issue 描述问题
-
----
-
-**⭐ 如果这个项目对您有帮助，请给个 Star！**
-
----
-
-🤖 Generated with [Claude Code](https://claude.ai/code)
-
-Co-Authored-By: Claude <noreply@anthropic.com>
+除了题目有关内容外皆采用mit协议授权
