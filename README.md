@@ -5,7 +5,7 @@
 ## ✨ 主要功能
 
 ### 🎯 核心功能
-- **多题库支持**: 内置增材制造、机器人编程等多个专业题库
+- **多题库支持**: 内置增材制造、机器人编程等多个专业题库（共23个题库）
 - **多种题型**: 支持单选、多选、判断、填空、简答题
 - **智能学习**: 错题回顾、收藏题目、学习计划
 - **进度跟踪**: 答题统计、正确率分析、学习连击
@@ -58,9 +58,17 @@ quiz-app-backup/
 │   ├── QuestionBankManager.tsx # 题库管理组件
 │   ├── main.tsx               # 应用入口
 │   ├── index.css              # 全局样式
-│   └── questionBanks/         # 题库文件夹
-│       ├── additive_*.js      # 增材制造题库
-│       └── robot-coding-*.js  # 机器人编程题库
+│   └── questionBanks/         # 题库文件夹 (23个题库)
+│       ├── additive_manufacturing_*.js      # 增材制造题库 (3个)
+│       │   ├── additive_manufacturing_basic.js
+│       │   ├── additive_manufacturing_intermediate.js
+│       │   └── additive_Manufacturing_Advanced.js
+│       └── robot-coding-*.js                # 机器人编程题库 (20个)
+│           ├── robot-coding-ABB-*.js        # ABB机器人
+│           ├── robot-coding-FNK-*.js        # 发那科机器人
+│           ├── robot-coding-HSR-*.js        # HSR机器人
+│           ├── robot-coding-KKR-*.js        # 川崎机器人
+│           └── robot-coding-[其他品牌]-*.js  # 其他品牌机器人
 ├── public/
 │   └── images/
 │       └── logos/             # Logo资源文件

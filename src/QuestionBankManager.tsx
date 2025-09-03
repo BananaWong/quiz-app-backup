@@ -69,7 +69,7 @@ const QuestionBankManager = ({ onClose }) => {
   const parseJavaScriptModule = (content) => {
     try {
       // 移除export语句，提取questionBank数组
-      let jsContent = content.replace(/export\s+const\s+/g, 'const ');
+      const jsContent = content.replace(/export\s+const\s+/g, 'const ');
       
       // 创建一个安全的执行环境
       const func = new Function(jsContent + '; return questionBank;');

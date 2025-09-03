@@ -1,0 +1,75 @@
+{
+  "name": "题库学习应用测试配置",
+  "version": "1.0.0",
+  "tests": {
+    "dependencies": {
+      "enabled": true,
+      "timeout": 30000,
+      "description": "检查项目依赖和 node_modules"
+    },
+    "fileStructure": {
+      "enabled": true,
+      "timeout": 5000,
+      "description": "检查项目文件结构完整性",
+      "requiredFiles": [
+        "src/App.tsx",
+        "src/main.tsx",
+        "src/index.css",
+        "index.html",
+        "vite.config.ts",
+        "tsconfig.json",
+        "tailwind.config.js"
+      ],
+      "requiredDirs": [
+        "src",
+        "src/questionBanks",
+        "src/components",
+        "public"
+      ]
+    },
+    "questionBanks": {
+      "enabled": true,
+      "timeout": 10000,
+      "description": "检查题库文件格式和内容",
+      "minBankCount": 3,
+      "validateFormat": true
+    },
+    "codeQuality": {
+      "enabled": true,
+      "timeout": 30000,
+      "description": "ESLint 代码质量检查"
+    },
+    "typeCheck": {
+      "enabled": true,
+      "timeout": 45000,
+      "description": "TypeScript 类型检查"
+    },
+    "build": {
+      "enabled": true,
+      "timeout": 60000,
+      "description": "项目构建测试"
+    },
+    "devServer": {
+      "enabled": true,
+      "timeout": 15000,
+      "description": "开发服务器启动测试"
+    },
+    "performance": {
+      "enabled": true,
+      "timeout": 10000,
+      "description": "性能和文件大小检查",
+      "maxFileSize": 100,
+      "maxDependencies": 20
+    }
+  },
+  "output": {
+    "directory": "./test-results",
+    "formats": ["json", "html", "console"],
+    "verbose": false
+  },
+  "notifications": {
+    "onSuccess": true,
+    "onFailure": true,
+    "onWarning": true
+  }
+}

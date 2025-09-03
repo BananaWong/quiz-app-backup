@@ -7,7 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node test-runner.js",
+    "test:quick": "node quick-test.js",
+    "test:verbose": "node test-runner.js --verbose",
+    "test:build": "node test-runner.js --skip-dev",
+    "test:dev": "node test-runner.js --skip-build"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",

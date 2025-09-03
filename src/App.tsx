@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
-import { ChevronLeft, BookOpen, Shuffle, FileX2, Home, RotateCcw, CheckCircle, XCircle, Clock, Target, TrendingUp, Award, Brain, Layers, Filter, BarChart3, Zap, Heart, Shield, Sparkles, Settings, Flame, Timer, Image, Download, FileText, PieChart, Calendar, Smartphone, Maximize, Moon, Sun, Star, StarOff, Volume2, VolumeX, Keyboard, Play, Pause, CalendarDays, Trophy, Code, Calculator, AlertCircle, Database, Plus } from 'lucide-react';
+import { ChevronLeft, BookOpen, Shuffle, FileX2, CheckCircle, XCircle, Clock, Target, Award, Brain, Filter, BarChart3, Zap, Heart, Settings, Flame, Image, Download, FileText, PieChart, Calendar, Smartphone, Maximize, Moon, Sun, Star, StarOff, Volume2, VolumeX, Keyboard, Play, CalendarDays, Trophy, AlertCircle, Database, Plus } from 'lucide-react';
 import QuestionBankManager from './QuestionBankManager';
+import LearningAnalytics from './components/LearningAnalytics';
 
 // 多邻国风格的舒适配色方案
 const COLORS = {
@@ -110,17 +111,27 @@ const COLORS = {
   }
 };
 
-// 配色助手函数
-const getColor = (colorKey: string, isDark: boolean) => {
-  const theme = isDark ? COLORS.dark : COLORS.light;
-  return theme[colorKey] || theme.text;
-};
+// 颜色主题类型定义
+type ColorTheme = typeof COLORS.light;
+type ColorKey = keyof ColorTheme;
+
+// 按钮组件类型定义
+interface ButtonProps {
+  variant?: 'primary' | 'secondary' | 'danger' | 'success' | 'warning' | 'ghost';
+  size?: 'sm' | 'md' | 'lg';
+  children: React.ReactNode;
+  onClick?: () => void;
+  disabled?: boolean;
+  className?: string;
+  icon?: React.ComponentType<any>;
+  iconPosition?: 'left' | 'right';
+}
 
 // 改进的按钮组件
-const Button = ({ variant = 'primary', size = 'md', children, onClick, disabled, className = '', icon: Icon, iconPosition = 'left' }) => {
+const Button: React.FC<ButtonProps> = ({ variant = 'primary', size = 'md', children, onClick, disabled, className = '', icon: Icon, iconPosition = 'left' }) => {
   const [settings] = useState(() => StorageHelper.getItem('quizSettings', { darkMode: false }));
   
-  const variants = {
+  const variants: Record<NonNullable<ButtonProps['variant']>, string> = {
     primary: settings.darkMode 
       ? 'bg-green-600 hover:bg-green-700 text-white border-green-600 shadow-sm' 
       : 'bg-green-500 hover:bg-green-600 text-white border-green-500 shadow-sm',
@@ -141,7 +152,7 @@ const Button = ({ variant = 'primary', size = 'md', children, onClick, disabled,
       : 'bg-transparent hover:bg-gray-50 text-gray-700 border-gray-200',
   };
   
-  const sizes = {
+  const sizes: Record<NonNullable<ButtonProps['size']>, string> = {
     sm: 'px-4 py-2 text-sm font-medium',
     md: 'px-6 py-3 text-base font-medium',
     lg: 'px-8 py-4 text-lg font-semibold',
@@ -154,7 +165,7 @@ const Button = ({ variant = 'primary', size = 'md', children, onClick, disabled,
         border transition-all duration-200 
         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500
         disabled:opacity-60 disabled:cursor-not-allowed active:scale-95
-        ${variants[variant]} ${sizes[size]} ${className}
+        ${variants[variant!]} ${sizes[size!]} ${className}
       `}
       onClick={onClick}
       disabled={disabled}
@@ -166,8 +177,16 @@ const Button = ({ variant = 'primary', size = 'md', children, onClick, disabled,
   );
 };
 
+// 卡片组件类型定义
+interface CardProps {
+  children: React.ReactNode;
+  className?: string;
+  hoverable?: boolean;
+  onClick?: () => void;
+}
+
 // 改进的卡片组件
-const Card = ({ children, className = '', hoverable = false, onClick }) => {
+const Card: React.FC<CardProps> = ({ children, className = '', hoverable = false, onClick }) => {
   const [settings] = useState(() => StorageHelper.getItem('quizSettings', { darkMode: false }));
   
   return (
@@ -194,18 +213,28 @@ const Card = ({ children, className = '', hoverable = false, onClick }) => {
 };
 
 
+// ErrorBoundary类型定义
+interface ErrorBoundaryProps {
+  children: React.ReactNode;
+}
+
+interface ErrorBoundaryState {
+  hasError: boolean;
+  error: Error | null;
+}
+
 // 增强的错误边界组件
-class ErrorBoundary extends React.Component {
-  constructor(props) {
+class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  constructor(props: ErrorBoundaryProps) {
     super(props);
     this.state = { hasError: false, error: null };
   }
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError(error: Error): ErrorBoundaryState {
     return { hasError: true, error };
   }
 
-  componentDidCatch(error, errorInfo) {
+  componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
     console.error('错误详情:', error, errorInfo);
   }
 
@@ -533,14 +562,14 @@ class QuestionValidator {
         if (question.options) {
           if (typeof question.options !== 'object') return false;
           if (Object.keys(question.options).length < 2) return false;
-          for (let char of question.answer) {
+          for (const char of question.answer) {
             if (!question.options[char]) return false;
           }
         }
         if (question.optionsWithImages) {
           if (typeof question.optionsWithImages !== 'object') return false;
           if (Object.keys(question.optionsWithImages).length < 2) return false;
-          for (let char of question.answer) {
+          for (const char of question.answer) {
             if (!question.optionsWithImages[char]) return false;
           }
         }
@@ -768,6 +797,19 @@ const App = () => {
   const [showBankManager, setShowBankManager] = useState(false);
   const [availableBanks, setAvailableBanks] = useState([]);
   
+  // 学习分析功能状态
+  const [showAnalytics, setShowAnalytics] = useState(false);
+  
+  // 题库卡片折叠状态
+  const [bankCardCollapsed, setBankCardCollapsed] = useState(() => {
+    return StorageHelper.getItem('bankCardCollapsed', false);
+  });
+  
+  // 保存折叠状态
+  useEffect(() => {
+    StorageHelper.setItem('bankCardCollapsed', bankCardCollapsed);
+  }, [bankCardCollapsed]);
+  
   // 题库相关状态
   const [currentBankId, setCurrentBankId] = useState(() => {
     return StorageHelper.getItem('selectedQuestionBank', 'additive');
@@ -787,6 +829,9 @@ const App = () => {
       enableKeyboard: true
     });
   });
+
+  // 主题颜色配置
+  const colors = settings.darkMode ? COLORS.dark : COLORS.light;
 
   // 新增功能状态
   const [studyHistory, setStudyHistory] = useState(() => {
@@ -3505,63 +3550,126 @@ const App = () => {
           }`}>学习计划</h2>
         </div>
         
-        <div className={`rounded-3xl shadow-xl p-6 mb-6 ${
+        {/* 优化后的进度卡片 - 使用主视觉风格 */}
+        <div className={`p-4 md:p-6 mb-4 md:mb-6 rounded-2xl transition-all duration-200 ${
           isGoalReached 
-            ? 'bg-gradient-to-br from-green-600 to-emerald-700' 
+            ? settings.darkMode 
+              ? 'bg-gray-800 border-2 border-green-500' 
+              : 'bg-green-50 border-2 border-green-200'
             : settings.darkMode 
-              ? 'bg-gradient-to-br from-gray-800 to-gray-900' 
-              : 'bg-gradient-to-br from-blue-600 to-purple-700'
-        } text-white`}>
+              ? 'bg-gray-800 border border-gray-700' 
+              : 'bg-white border border-gray-100 shadow-sm'
+        }`}>
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-lg font-bold">今日进度</h3>
-            {isGoalReached && <Trophy size={24} className="text-yellow-300" />}
+            <div className="flex items-center space-x-2">
+              <Calendar size={20} style={{ color: colors.primary }} />
+              <h3 className={`text-lg font-bold ${
+                settings.darkMode ? 'text-gray-100' : 'text-gray-900'
+              }`}>今日进度</h3>
+            </div>
+            {isGoalReached && <Trophy size={24} style={{ color: colors.accent }} />}
           </div>
           
           <div className="mb-4">
-            <div className="flex justify-between items-center mb-2">
-              <span className="text-sm opacity-90">
+            <div className="flex justify-between items-center mb-3">
+              <span className={`text-sm font-medium ${
+                settings.darkMode ? 'text-gray-300' : 'text-gray-700'
+              }`}>
                 {todayProgress} / {dailyGoal} 题
               </span>
-              <span className="text-lg font-bold">
+              <span className={`text-xl font-bold ${
+                isGoalReached 
+                  ? settings.darkMode ? 'text-green-400' : 'text-green-600'
+                  : settings.darkMode ? 'text-blue-400' : 'text-blue-600'
+              }`}>
                 {Math.round(progressPercentage)}%
               </span>
             </div>
-            <div className="w-full bg-white/20 rounded-full h-3 overflow-hidden">
+            <div className={`w-full rounded-full h-2 overflow-hidden ${
+              settings.darkMode ? 'bg-gray-700' : 'bg-gray-200'
+            }`}>
               <div 
-                className="h-full bg-white/80 rounded-full transition-all duration-700 ease-out"
-                style={{ width: `${progressPercentage}%` }}
+                className="h-full rounded-full transition-all duration-700 ease-out"
+                style={{ 
+                  width: `${progressPercentage}%`,
+                  backgroundColor: isGoalReached ? colors.success : colors.primary
+                }}
               />
             </div>
           </div>
           
-          {isGoalReached ? (
-            <p className="text-sm opacity-90">🎉 今日目标已完成！继续保持！</p>
-          ) : (
-            <p className="text-sm opacity-90">
-              还需 {dailyGoal - todayProgress} 道题完成今日目标
-            </p>
-          )}
+          <div className="flex items-center space-x-2">
+            {isGoalReached ? (
+              <>
+                <CheckCircle size={16} style={{ color: colors.success }} />
+                <p className={`text-sm font-medium ${
+                  settings.darkMode ? 'text-green-400' : 'text-green-600'
+                }`}>🎉 今日目标已完成！继续保持！</p>
+              </>
+            ) : (
+              <>
+                <Target size={16} style={{ color: colors.primary }} />
+                <p className={`text-sm ${
+                  settings.darkMode ? 'text-gray-300' : 'text-gray-700'
+                }`}>
+                  还需 {dailyGoal - todayProgress} 道题完成今日目标
+                </p>
+              </>
+            )}
+          </div>
         </div>
         
-        <div className="grid grid-cols-2 gap-4 mb-6">
-          <Card className="p-4 text-center">
-            <div className={`text-2xl font-bold mb-1 ${
-              settings.darkMode ? 'text-green-400' : 'text-green-600'
-            }`}>{studyStreak}</div>
+        {/* 优化后的统计卡片 */}
+        <div className="grid grid-cols-2 gap-3 md:gap-4 mb-4 md:mb-6">
+          <Card className="p-3 md:p-4 text-center">
+            <div className="flex items-center justify-center mb-2">
+              <Flame size={18} style={{ color: colors.accent }} />
+            </div>
+            <div className={`text-xl md:text-2xl font-bold mb-1`} style={{ color: colors.accent }}>
+              {studyStreak}
+            </div>
             <div className={`text-xs ${
               settings.darkMode ? 'text-gray-400' : 'text-gray-600'
             }`}>连续学习天数</div>
           </Card>
           
-          <Card className="p-4 text-center">
-            <div className={`text-2xl font-bold mb-1 ${
-              settings.darkMode ? 'text-blue-400' : 'text-blue-600'
-            }`}>{studyHistory.length}</div>
+          <Card className="p-3 md:p-4 text-center">
+            <div className="flex items-center justify-center mb-2">
+              <BookOpen size={18} style={{ color: colors.primary }} />
+            </div>
+            <div className={`text-xl md:text-2xl font-bold mb-1`} style={{ color: colors.primary }}>
+              {studyHistory.length}
+            </div>
             <div className={`text-xs ${
               settings.darkMode ? 'text-gray-400' : 'text-gray-600'
             }`}>总学习次数</div>
           </Card>
         </div>
+        
+        {/* 学习分析功能 */}
+        <Card className="p-4 mb-6">
+          <h3 className={`font-bold mb-4 ${
+            settings.darkMode ? 'text-gray-100' : 'text-gray-800'
+          }`}>学习分析</h3>
+          
+          <div className="space-y-3">
+            <p className={`text-sm ${
+              settings.darkMode ? 'text-gray-400' : 'text-gray-600'
+            }`}>查看详细的学习统计和进步分析</p>
+            
+            <Button 
+              variant="primary"
+              icon={BarChart3}
+              onClick={() => {
+                setShowAnalytics(true);
+                playSound('click');
+              }}
+              className="w-full"
+            >
+              查看学习分析报告
+            </Button>
+          </div>
+        </Card>
         
         <Card className="p-4 mb-6">
           <h3 className={`font-bold mb-4 ${
@@ -3570,12 +3678,15 @@ const App = () => {
           
           <div className="space-y-4">
             <div className="flex items-center justify-between">
-              <span className={`font-medium ${
-                settings.darkMode ? 'text-gray-300' : 'text-gray-700'
-              }`}>每日题目数量</span>
-              <span className={`text-xl font-bold ${
-                settings.darkMode ? 'text-blue-400' : 'text-blue-600'
-              }`}>{dailyGoal}</span>
+              <div className="flex items-center space-x-2">
+                <Target size={16} style={{ color: colors.primary }} />
+                <span className={`font-medium ${
+                  settings.darkMode ? 'text-gray-300' : 'text-gray-700'
+                }`}>每日题目数量</span>
+              </div>
+              <span className={`text-xl font-bold`} style={{ color: colors.primary }}>
+                {dailyGoal}
+              </span>
             </div>
             
             <input 
@@ -3589,13 +3700,15 @@ const App = () => {
                 setDailyGoal(newGoal);
                 StorageHelper.setItem('dailyGoal', newGoal);
               }}
-              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+              className="w-full h-2 rounded-lg appearance-none cursor-pointer"
               style={{
-                background: `linear-gradient(to right, #3b82f6 0%, #3b82f6 ${(dailyGoal/100)*100}%, ${settings.darkMode ? '#374151' : '#e5e7eb'} ${(dailyGoal/100)*100}%, ${settings.darkMode ? '#374151' : '#e5e7eb'} 100%)`
+                background: `linear-gradient(to right, ${colors.primary} 0%, ${colors.primary} ${(dailyGoal/100)*100}%, ${settings.darkMode ? colors.borderHover : colors.borderLight} ${(dailyGoal/100)*100}%, ${settings.darkMode ? colors.borderHover : colors.borderLight} 100%)`
               }}
             />
             
-            <div className="flex justify-between text-xs text-gray-500">
+            <div className={`flex justify-between text-xs ${
+              settings.darkMode ? 'text-gray-500' : 'text-gray-500'
+            }`}>
               <span>5题</span>
               <span>100题</span>
             </div>
@@ -3622,6 +3735,7 @@ const App = () => {
                 }
                 playSound('click');
               }}
+              className="whitespace-nowrap"
             >
               {todayProgress >= dailyGoal ? '额外练习' : `完成今日目标 (${dailyGoal - todayProgress}题)`}
             </Button>
@@ -3634,6 +3748,7 @@ const App = () => {
                 startQuizMode('random');
                 playSound('click');
               }}
+              className="whitespace-nowrap"
             >
               随机练习 10 题
             </Button>
@@ -3672,65 +3787,110 @@ const App = () => {
     
     return (
       <div className="animate-in fade-in duration-500">
-        <div className={`mb-6 p-5 rounded-2xl transition-all duration-200 ${
-          settings.darkMode 
-            ? 'bg-gray-800 border border-gray-700' 
-            : 'bg-white border border-gray-100 shadow-sm'
+        {/* 优化后的题库卡片 - 支持收起/展开 */}
+        <div className={`mb-4 md:mb-6 transition-all duration-300 ${
+          bankCardCollapsed ? 'mb-2' : ''
         }`}>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <div 
-                className="w-12 h-12 rounded-2xl flex items-center justify-center shadow-sm border"
-                style={{ 
-                  backgroundColor: `${currentBank.color}15`,
-                  borderColor: `${currentBank.color}25`,
-                }}
-              >
-                {/* 题库Logo - 将对应的logo文件放在public/images/logos/banks/目录下 */}
-                <img 
-                  src={`/images/logos/banks/${currentBank.id}.png`}
-                  alt={`${currentBank.name} Logo`}
-                  className="w-8 h-8 rounded-lg object-contain"
-                  onError={(e) => {
-                    // 如果图片加载失败，显示placeholder
-                    e.target.style.display = 'none';
-                    e.target.nextElementSibling.style.display = 'flex';
-                  }}
-                />
+          <div className={`${
+            bankCardCollapsed ? 'p-3' : 'p-4 md:p-5'
+          } rounded-2xl transition-all duration-300 ${
+            settings.darkMode 
+              ? 'bg-gray-800 border border-gray-700' 
+              : 'bg-white border border-gray-100 shadow-sm'
+          }`}>
+            <div className="flex items-center justify-between">
+              <div className={`flex items-center ${
+                bankCardCollapsed ? 'space-x-2' : 'space-x-3 md:space-x-4'
+              }`}>
                 <div 
-                  className={`w-8 h-8 rounded-lg items-center justify-center text-xs font-medium ${
-                    settings.darkMode ? 'text-gray-400' : 'text-gray-600'
-                  }`} 
+                  className={`${
+                    bankCardCollapsed ? 'w-8 h-8' : 'w-10 h-10 md:w-12 md:h-12'
+                  } rounded-xl md:rounded-2xl flex items-center justify-center shadow-sm border transition-all duration-300`}
                   style={{ 
-                    backgroundColor: `${currentBank.color}40`,
-                    display: 'none'
+                    backgroundColor: `${currentBank.color}15`,
+                    borderColor: `${currentBank.color}25`,
                   }}
                 >
-                  LOGO
+                  <img 
+                    src={`/images/logos/banks/${currentBank.id}.png`}
+                    alt={`${currentBank.name} Logo`}
+                    className={`${
+                      bankCardCollapsed ? 'w-5 h-5' : 'w-6 h-6 md:w-8 md:h-8'
+                    } rounded-lg object-contain transition-all duration-300`}
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextElementSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div 
+                    className={`${
+                      bankCardCollapsed ? 'w-5 h-5 text-xs' : 'w-6 h-6 md:w-8 md:h-8 text-xs md:text-sm'
+                    } rounded-lg items-center justify-center font-medium transition-all duration-300 ${
+                      settings.darkMode ? 'text-gray-400' : 'text-gray-600'
+                    }`} 
+                    style={{ 
+                      backgroundColor: `${currentBank.color}40`,
+                      display: 'none'
+                    }}
+                  >
+                    LOGO
+                  </div>
                 </div>
+                <div className={`${bankCardCollapsed ? 'hidden md:block' : ''}`}>
+                  <p className={`text-xs font-medium ${
+                    settings.darkMode ? 'text-gray-400' : 'text-gray-600'
+                  }`}>当前题库</p>
+                  <h2 className={`font-bold ${
+                    bankCardCollapsed ? 'text-sm md:text-base' : 'text-base md:text-lg'
+                  } leading-tight transition-all duration-300 ${
+                    settings.darkMode ? 'text-gray-100' : 'text-gray-900'
+                  }`}>{currentBank.name}</h2>
+                </div>
+                {bankCardCollapsed && (
+                  <div className="block md:hidden">
+                    <h2 className={`font-semibold text-sm ${
+                      settings.darkMode ? 'text-gray-100' : 'text-gray-900'
+                    }`}>{currentBank.name.split(' ')[0]}</h2>
+                  </div>
+                )}
               </div>
-              <div>
-                <p className={`text-xs font-medium ${
-                  settings.darkMode ? 'text-gray-400' : 'text-gray-600'
-                }`}>当前题库</p>
-                <h2 className={`font-bold text-lg leading-tight ${
-                  settings.darkMode ? 'text-gray-100' : 'text-gray-900'
-                }`}>{currentBank.name}</h2>
+              <div className="flex items-center space-x-2">
+                {!bankCardCollapsed && (
+                  <button
+                    onClick={() => {
+                      playSound('click');
+                      setShowBankSwitcher(true);
+                    }}
+                    className={`px-3 md:px-4 py-2 rounded-xl md:rounded-2xl font-medium text-xs md:text-sm transition-all duration-200 active:scale-95 whitespace-nowrap ${
+                      settings.darkMode
+                        ? 'bg-gray-700 text-gray-200 hover:bg-gray-600 border border-gray-600'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200'
+                    }`}
+                  >
+                    切换题库
+                  </button>
+                )}
+                <button
+                  onClick={() => {
+                    setBankCardCollapsed(!bankCardCollapsed);
+                    playSound('click');
+                  }}
+                  className={`p-2 rounded-xl transition-all duration-200 active:scale-95 ${
+                    settings.darkMode
+                      ? 'text-gray-400 hover:text-gray-200 hover:bg-gray-700'
+                      : 'text-gray-500 hover:text-gray-700 hover:bg-gray-100'
+                  }`}
+                  title={bankCardCollapsed ? '展开题库信息' : '收起题库信息'}
+                >
+                  <ChevronLeft 
+                    size={16} 
+                    className={`transition-transform duration-300 ${
+                      bankCardCollapsed ? 'rotate-180' : 'rotate-90'
+                    }`}
+                  />
+                </button>
               </div>
             </div>
-            <button
-              onClick={() => {
-                playSound('click');
-                setShowBankSwitcher(true);
-              }}
-              className={`px-4 py-2 rounded-2xl font-medium text-sm transition-all duration-200 active:scale-95 ${
-                settings.darkMode
-                  ? 'bg-gray-700 text-gray-200 hover:bg-gray-600 border border-gray-600'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200'
-              }`}
-            >
-              切换题库
-            </button>
           </div>
         </div>
 
@@ -3977,7 +4137,8 @@ const App = () => {
           />
         </div>
 
-        <div className="space-y-2">
+        {/* 优化后的按钮布局 - 响应式设计 */}
+        <div className="space-y-2 md:space-y-3">
           <Button 
             variant="primary"
             icon={BookOpen}
@@ -3992,11 +4153,11 @@ const App = () => {
             }}
             disabled={maxQuestions === 0}
           >
-            <div className="flex-1 text-left">
-              <div className="font-bold">顺序练习</div>
-              <div className="text-xs opacity-90">按题库顺序练习</div>
+            <div className="flex-1 text-left min-w-0">
+              <div className="font-bold text-sm md:text-base">顺序练习</div>
+              <div className="text-xs opacity-90 truncate">按题库顺序练习</div>
             </div>
-            <ChevronLeft size={18} className="rotate-180" />
+            <ChevronLeft size={16} className="rotate-180 ml-2 flex-shrink-0" />
           </Button>
 
           <Button 
@@ -4013,11 +4174,11 @@ const App = () => {
             }}
             disabled={maxQuestions === 0}
           >
-            <div className="flex-1 text-left">
-              <div className="font-bold">随机练习</div>
-              <div className="text-xs opacity-90">随机抽取题目练习</div>
+            <div className="flex-1 text-left min-w-0">
+              <div className="font-bold text-sm md:text-base">随机练习</div>
+              <div className="text-xs opacity-90 truncate">随机抽取题目练习</div>
             </div>
-            <ChevronLeft size={18} className="rotate-180" />
+            <ChevronLeft size={16} className="rotate-180 ml-2 flex-shrink-0" />
           </Button>
 
           <Button 
@@ -4034,11 +4195,11 @@ const App = () => {
             }}
             disabled={wrongQuestions.length === 0}
           >
-            <div className="flex-1 text-left">
-              <div className="font-bold">错题练习</div>
-              <div className="text-xs opacity-90">共 {wrongQuestions.length} 道错题</div>
+            <div className="flex-1 text-left min-w-0">
+              <div className="font-bold text-sm md:text-base">错题练习</div>
+              <div className="text-xs opacity-90 truncate">共 {wrongQuestions.length} 道错题</div>
             </div>
-            <ChevronLeft size={18} className="rotate-180" />
+            <ChevronLeft size={16} className="rotate-180 ml-2 flex-shrink-0" />
           </Button>
 
           <Button 
@@ -4055,11 +4216,11 @@ const App = () => {
             }}
             disabled={favoriteQuestions.length === 0}
           >
-            <div className="flex-1 text-left">
-              <div className="font-bold">收藏练习</div>
-              <div className="text-xs opacity-90">共 {favoriteQuestions.length} 道收藏</div>
+            <div className="flex-1 text-left min-w-0">
+              <div className="font-bold text-sm md:text-base">收藏练习</div>
+              <div className="text-xs opacity-90 truncate">共 {favoriteQuestions.length} 道收藏</div>
             </div>
-            <ChevronLeft size={18} className="rotate-180" />
+            <ChevronLeft size={16} className="rotate-180 ml-2 flex-shrink-0" />
           </Button>
         </div>
       </div>
@@ -4134,7 +4295,7 @@ const App = () => {
           ? 'bg-gray-900' 
           : 'bg-gray-50'
       }`}>
-        <div className="container mx-auto px-4 py-4 max-w-md">
+        <div className="container mx-auto px-4 py-4 max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
           {renderScreen()}
         </div>
         
@@ -4158,6 +4319,18 @@ const App = () => {
               }));
               setAvailableBanks([...Object.values(BUILTIN_QUESTION_BANKS), ...customBanks]);
             }}
+          />
+        )}
+        
+        {/* 学习分析系统 */}
+        {showAnalytics && (
+          <LearningAnalytics
+            studyHistory={studyHistory}
+            answerTimes={answerTimes}
+            currentStreak={currentStreak}
+            maxStreak={maxStreak}
+            colors={colors}
+            onClose={() => setShowAnalytics(false)}
           />
         )}
       </div>
