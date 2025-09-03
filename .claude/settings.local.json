@@ -18,7 +18,10 @@
       "Bash(git commit:*)",
       "Bash(git remote remove:*)",
       "Bash(git remote add:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(taskkill:*)",
+      "Bash(pkill:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []

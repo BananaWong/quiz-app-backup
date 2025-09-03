@@ -301,7 +301,7 @@ const BUILTIN_QUESTION_BANKS = {
     module: () => import('./questionBanks/robot-coding-BNR-mid.js')
   },
 
-  // 发那科机器人
+  // 发那科机器人中级
   'robot-coding-fnk-mid': {
     id: 'robot-coding-fnk-mid',
     name: '发那科机器人编程-中级',
@@ -310,6 +310,15 @@ const BUILTIN_QUESTION_BANKS = {
     description: '发那科工业机器人编程技术',
     imageFolder: 'robot-fnk-mid',
     module: () => import('./questionBanks/robot-coding-FNK-mid.js')
+  },
+  'robot-coding-fnk-basic': {
+    id: 'robot-coding-fnk-basic',
+    name: '发那科机器人编程-初级',
+    category: 'robotics',
+    color: '#ffc832',
+    description: '发那科工业机器人编程技术',
+    imageFolder: 'robot-fnk-basic',
+    module: () => import('./questionBanks/robot-coding-FNK-basic.js')
   },
 
   // 发那科亚龙机器人

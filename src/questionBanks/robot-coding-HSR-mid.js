@@ -12,7 +12,7 @@ export const questionBank = [
       D: "没有限制，随意设定"
     },
     answer: "B",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const questionBank = [
       D: "16；32"
     },
     answer: "A",
-    category: "硬件配置"
+    category: "硬件与IO控制"
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ export const questionBank = [
       D: "Internet"
     },
     answer: "B",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ export const questionBank = [
       D: "外部模式"
     },
     answer: "D",
-    category: "操作模式"
+    category: "系统配置与操作"
   },
   {
     id: 5,
@@ -64,7 +64,7 @@ export const questionBank = [
       D: "T2模式"
     },
     answer: "D",
-    category: "操作模式"
+    category: "系统配置与操作"
   },
   {
     id: 6,
@@ -77,7 +77,7 @@ export const questionBank = [
       D: "急停按键"
     },
     answer: "C",
-    category: "操作模式"
+    category: "系统配置与操作"
   },
   {
     id: 7,
@@ -90,7 +90,7 @@ export const questionBank = [
       D: "-2"
     },
     answer: "B",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 8,
@@ -103,7 +103,7 @@ export const questionBank = [
       D: "笛卡尔坐标寄存器"
     },
     answer: "C",
-    category: "寄存器系统"
+    category: "编程与指令"
   },
   {
     id: 9,
@@ -116,7 +116,7 @@ export const questionBank = [
       D: "笛卡尔坐标寄存器"
     },
     answer: "D",
-    category: "寄存器系统"
+    category: "编程与指令"
   },
   {
     id: 10,
@@ -129,7 +129,7 @@ export const questionBank = [
       D: "笛卡尔坐标寄存器"
     },
     answer: "B",
-    category: "寄存器系统"
+    category: "编程与指令"
   },
   {
     id: 11,
@@ -142,7 +142,7 @@ export const questionBank = [
       D: "默认0号工具坐标系Y轴按左手螺旋法则确定"
     },
     answer: "D",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 12,
@@ -155,7 +155,7 @@ export const questionBank = [
       D: "删除"
     },
     answer: "D",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 13,
@@ -168,7 +168,7 @@ export const questionBank = [
       D: "模拟量输出"
     },
     answer: "B",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 14,
@@ -181,7 +181,7 @@ export const questionBank = [
       D: "default"
     },
     answer: "B",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 15,
@@ -194,7 +194,7 @@ export const questionBank = [
       D: "mm/min"
     },
     answer: "A",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 16,
@@ -207,7 +207,7 @@ export const questionBank = [
       D: "失效抱闸"
     },
     answer: "D",
-    category: "机械系统"
+    category: "通信与集成"
   },
   {
     id: 17,
@@ -220,7 +220,7 @@ export const questionBank = [
       D: "旋转编码器"
     },
     answer: "A",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 18,
@@ -233,7 +233,7 @@ export const questionBank = [
       D: "最小空间"
     },
     answer: "C",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 19,
@@ -246,7 +246,7 @@ export const questionBank = [
       D: "行走部分"
     },
     answer: "B",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 20,
@@ -259,7 +259,7 @@ export const questionBank = [
       D: "三角形"
     },
     answer: "A",
-    category: "机器人类型"
+    category: "通信与集成"
   },
   {
     id: 21,
@@ -272,7 +272,7 @@ export const questionBank = [
       D: "三角形"
     },
     answer: "B",
-    category: "机器人类型"
+    category: "通信与集成"
   },
   {
     id: 22,
@@ -285,7 +285,7 @@ export const questionBank = [
       D: "配置"
     },
     answer: "C",
-    category: "故障诊断"
+    category: "维护与诊断"
   },
   {
     id: 23,
@@ -298,7 +298,7 @@ export const questionBank = [
       D: "示教器配置"
     },
     answer: "A",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 24,
@@ -311,7 +311,7 @@ export const questionBank = [
       D: "系统升级"
     },
     answer: "A",
-    category: "系统设置"
+    category: "系统配置与操作"
   },
   {
     id: 25,
@@ -324,7 +324,7 @@ export const questionBank = [
       D: "精度高"
     },
     answer: "A",
-    category: "传动系统"
+    category: "硬件与IO控制"
   },
   {
     id: 26,
@@ -337,7 +337,7 @@ export const questionBank = [
       D: "90,0,0,0，-90,0"
     },
     answer: "B",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 27,
@@ -350,7 +350,7 @@ export const questionBank = [
       D: "4、5、6轴"
     },
     answer: "A",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 28,
@@ -363,7 +363,7 @@ export const questionBank = [
       D: "机器人不能运动"
     },
     answer: "A",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 29,
@@ -376,7 +376,7 @@ export const questionBank = [
       D: "放置在设备上"
     },
     answer: "B",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 30,
@@ -389,7 +389,7 @@ export const questionBank = [
       D: "程序数据"
     },
     answer: "B",
-    category: "系统设置"
+    category: "系统配置与操作"
   },
   {
     id: 31,
@@ -402,7 +402,7 @@ export const questionBank = [
       D: "机器人首次开机后"
     },
     answer: "D",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 32,
@@ -415,7 +415,7 @@ export const questionBank = [
       D: "FlexPendant资源管理器"
     },
     answer: "A",
-    category: "故障诊断"
+    category: "维护与诊断"
   },
   {
     id: 33,
@@ -428,7 +428,7 @@ export const questionBank = [
       D: "以上都有"
     },
     answer: "D",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 34,
@@ -441,7 +441,7 @@ export const questionBank = [
       D: "配置"
     },
     answer: "A",
-    category: "系统设置"
+    category: "系统配置与操作"
   },
   {
     id: 35,
@@ -454,7 +454,7 @@ export const questionBank = [
       D: "配置"
     },
     answer: "C",
-    category: "系统设置"
+    category: "系统配置与操作"
   },
   {
     id: 36,
@@ -467,7 +467,7 @@ export const questionBank = [
       D: "查阅机器人状态"
     },
     answer: "B",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 37,
@@ -480,7 +480,7 @@ export const questionBank = [
       D: "同批次相同"
     },
     answer: "C",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 38,
@@ -493,7 +493,7 @@ export const questionBank = [
       D: "机器人事件信息"
     },
     answer: "D",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 39,
@@ -506,7 +506,7 @@ export const questionBank = [
       D: "电动机锁定状态"
     },
     answer: "A",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 40,
@@ -519,7 +519,7 @@ export const questionBank = [
       D: "工具坐标系"
     },
     answer: "D",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 41,
@@ -532,7 +532,7 @@ export const questionBank = [
       D: "电机状态"
     },
     answer: "A",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 42,
@@ -545,7 +545,7 @@ export const questionBank = [
       D: "参数配置"
     },
     answer: "B",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 43,
@@ -558,7 +558,7 @@ export const questionBank = [
       D: "统一性"
     },
     answer: "A",
-    category: "数据管理"
+    category: "编程与指令"
   },
   {
     id: 44,
@@ -571,7 +571,7 @@ export const questionBank = [
       D: "保密"
     },
     answer: "C",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 45,
@@ -584,7 +584,7 @@ export const questionBank = [
       D: "笛卡尔坐标寄存器"
     },
     answer: "A",
-    category: "寄存器系统"
+    category: "编程与指令"
   },
   {
     id: 46,
@@ -597,7 +597,7 @@ export const questionBank = [
       D: "笛卡尔坐标寄存器"
     },
     answer: "B",
-    category: "寄存器系统"
+    category: "编程与指令"
   },
   {
     id: 47,
@@ -610,7 +610,7 @@ export const questionBank = [
       D: "64"
     },
     answer: "B",
-    category: "寄存器系统"
+    category: "编程与指令"
   },
   {
     id: 48,
@@ -623,7 +623,7 @@ export const questionBank = [
       D: "64"
     },
     answer: "B",
-    category: "寄存器系统"
+    category: "编程与指令"
   },
   {
     id: 49,
@@ -636,7 +636,7 @@ export const questionBank = [
       D: "10 步/次"
     },
     answer: "C",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 50,
@@ -649,7 +649,7 @@ export const questionBank = [
       D: "旋转运动"
     },
     answer: "B",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 51,
@@ -662,7 +662,7 @@ export const questionBank = [
       D: "旋转运动"
     },
     answer: "C",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 52,
@@ -675,7 +675,7 @@ export const questionBank = [
       D: "当前选中的工具坐标 TCP 点"
     },
     answer: "D",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 53,
@@ -688,7 +688,7 @@ export const questionBank = [
       D: "不易与传感器信息相配合"
     },
     answer: "B",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 54,
@@ -701,7 +701,7 @@ export const questionBank = [
       D: "任务栏"
     },
     answer: "A",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 55,
@@ -714,7 +714,7 @@ export const questionBank = [
       D: "夹具松开/夹具夹紧"
     },
     answer: "B",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 56,
@@ -727,7 +727,7 @@ export const questionBank = [
       D: "4-5-6-1-2-3"
     },
     answer: "D",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 57,
@@ -740,7 +740,7 @@ export const questionBank = [
       D: "状态"
     },
     answer: "A",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 58,
@@ -753,7 +753,7 @@ export const questionBank = [
       D: "控制面板"
     },
     answer: "B",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 59,
@@ -766,7 +766,7 @@ export const questionBank = [
       D: "以上全部是"
     },
     answer: "D",
-    category: "故障诊断"
+    category: "维护与诊断"
   },
   {
     id: 60,
@@ -779,7 +779,7 @@ export const questionBank = [
       D: "备份"
     },
     answer: "B",
-    category: "数据管理"
+    category: "编程与指令"
   },
   {
     id: 61,
@@ -792,7 +792,7 @@ export const questionBank = [
       D: "4"
     },
     answer: "D",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 62,
@@ -805,7 +805,7 @@ export const questionBank = [
       D: "力矩轴方向"
     },
     answer: "B",
-    category: "系统设置"
+    category: "系统配置与操作"
   },
   {
     id: 63,
@@ -818,7 +818,7 @@ export const questionBank = [
       D: "基坐标"
     },
     answer: "A",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 64,
@@ -831,7 +831,7 @@ export const questionBank = [
       D: "以上都不可以"
     },
     answer: "D",
-    category: "系统设置"
+    category: "系统配置与操作"
   },
   {
     id: 65,
@@ -844,7 +844,7 @@ export const questionBank = [
       D: "齿轮机构、滚珠丝杠机构"
     },
     answer: "A",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 66,
@@ -857,7 +857,7 @@ export const questionBank = [
       D: "安全围栏"
     },
     answer: "D",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 67,
@@ -870,7 +870,7 @@ export const questionBank = [
       D: "数据线"
     },
     answer: "B",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 68,
@@ -883,7 +883,7 @@ export const questionBank = [
       D: "模拟通信"
     },
     answer: "B",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 69,
@@ -896,7 +896,7 @@ export const questionBank = [
       D: "进水口和出水口"
     },
     answer: "C",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 70,
@@ -909,7 +909,7 @@ export const questionBank = [
       D: "剪丝清洗设备"
     },
     answer: "D",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 71,
@@ -922,7 +922,7 @@ export const questionBank = [
       D: "变位机"
     },
     answer: "A",
-    category: "打磨系统"
+    category: "应用技术"
   },
   {
     id: 72,
@@ -935,7 +935,7 @@ export const questionBank = [
       D: "变位机"
     },
     answer: "B",
-    category: "打磨系统"
+    category: "应用技术"
   },
   {
     id: 73,
@@ -948,7 +948,7 @@ export const questionBank = [
       D: "不锈钢"
     },
     answer: "D",
-    category: "加工应用"
+    category: "应用技术"
   },
   {
     id: 74,
@@ -961,7 +961,7 @@ export const questionBank = [
       D: "先简单后复杂"
     },
     answer: "C",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 75,
@@ -974,7 +974,7 @@ export const questionBank = [
       D: "变位机配合"
     },
     answer: "B",
-    category: "打磨系统"
+    category: "应用技术"
   },
   {
     id: 76,
@@ -987,7 +987,7 @@ export const questionBank = [
       D: "过快出丝"
     },
     answer: "C",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 77,
@@ -1000,7 +1000,7 @@ export const questionBank = [
       D: "送丝轮压力"
     },
     answer: "B",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 78,
@@ -1013,7 +1013,7 @@ export const questionBank = [
       D: "打磨"
     },
     answer: "D",
-    category: "打磨系统"
+    category: "应用技术"
   },
   {
     id: 79,
@@ -1026,7 +1026,7 @@ export const questionBank = [
       D: "双座式"
     },
     answer: "C",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 80,
@@ -1039,7 +1039,7 @@ export const questionBank = [
       D: "使用方便"
     },
     answer: "A",
-    category: "打磨系统"
+    category: "应用技术"
   },
   {
     id: 81,
@@ -1052,7 +1052,7 @@ export const questionBank = [
       D: "速度恒定，加速度恒定"
     },
     answer: "A",
-    category: "运动控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 82,
@@ -1065,7 +1065,7 @@ export const questionBank = [
       D: "R轴"
     },
     answer: "C",
-    category: "运动控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 83,
@@ -1091,7 +1091,7 @@ export const questionBank = [
       D: "在线描点法、离线图形法"
     },
     answer: "D",
-    category: "编程技术"
+    category: "编程与指令"
   },
   {
     id: 85,
@@ -1104,7 +1104,7 @@ export const questionBank = [
       D: "法兰盘表面"
     },
     answer: "C",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 86,
@@ -1117,7 +1117,7 @@ export const questionBank = [
       D: "无极调节性、重复定位精度"
     },
     answer: "B",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 87,
@@ -1130,7 +1130,7 @@ export const questionBank = [
       D: "润滑"
     },
     answer: "C",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 88,
@@ -1143,7 +1143,7 @@ export const questionBank = [
       D: "以上都是"
     },
     answer: "D",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 89,
@@ -1156,7 +1156,7 @@ export const questionBank = [
       D: "收弧"
     },
     answer: "A",
-    category: "焊接编程"
+    category: "编程与指令"
   },
   {
     id: 90,
@@ -1169,7 +1169,7 @@ export const questionBank = [
       D: "m/s"
     },
     answer: "A",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 91,
@@ -1182,7 +1182,7 @@ export const questionBank = [
       D: "ARC_ON"
     },
     answer: "D",
-    category: "焊接编程"
+    category: "编程与指令"
   },
   {
     id: 92,
@@ -1195,7 +1195,7 @@ export const questionBank = [
       D: "以上全是"
     },
     answer: "D",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 93,
@@ -1208,7 +1208,7 @@ export const questionBank = [
       D: "起弧成功"
     },
     answer: "C",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 94,
@@ -1221,7 +1221,7 @@ export const questionBank = [
       D: "送丝"
     },
     answer: "B",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 95,
@@ -1234,7 +1234,7 @@ export const questionBank = [
       D: "起弧成功"
     },
     answer: "D",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 96,
@@ -1247,7 +1247,7 @@ export const questionBank = [
       D: "模拟量输出信号"
     },
     answer: "B",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 97,
@@ -1260,7 +1260,7 @@ export const questionBank = [
       D: "模拟量输出信号"
     },
     answer: "A",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 98,
@@ -1273,7 +1273,7 @@ export const questionBank = [
       D: "以上全是"
     },
     answer: "D",
-    category: "焊接编程"
+    category: "编程与指令"
   },
   {
     id: 99,
@@ -1286,7 +1286,7 @@ export const questionBank = [
       D: "焊丝阻值"
     },
     answer: "D",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 100,
@@ -1299,7 +1299,7 @@ export const questionBank = [
       D: "回避与焊枪的干涉"
     },
     answer: "C",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 101,
@@ -1312,7 +1312,7 @@ export const questionBank = [
       D: "以上都可以"
     },
     answer: "A",
-    category: "运动控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 102,
@@ -1325,7 +1325,7 @@ export const questionBank = [
       D: "焊丝的送丝速度"
     },
     answer: "B",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 103,
@@ -1338,7 +1338,7 @@ export const questionBank = [
       D: "运行程序"
     },
     answer: "C",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 104,
@@ -1351,7 +1351,7 @@ export const questionBank = [
       D: "先连接焊机，再到机器人"
     },
     answer: "A",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 105,
@@ -1364,7 +1364,7 @@ export const questionBank = [
       D: "0~10A"
     },
     answer: "D",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 106,
@@ -1377,7 +1377,7 @@ export const questionBank = [
       D: "先校正电流模拟量，再校正电压模拟量"
     },
     answer: "D",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 107,
@@ -1390,7 +1390,7 @@ export const questionBank = [
       D: "校准"
     },
     answer: "A",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 108,
@@ -1403,7 +1403,7 @@ export const questionBank = [
       D: "I/O信号"
     },
     answer: "C",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 109,
@@ -1416,7 +1416,7 @@ export const questionBank = [
       D: "变位机启动"
     },
     answer: "D",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 110,
@@ -1429,7 +1429,7 @@ export const questionBank = [
       D: "以上都是"
     },
     answer: "D",
-    category: "焊接编程"
+    category: "编程与指令"
   },
   {
     id: 111,
@@ -1442,7 +1442,7 @@ export const questionBank = [
       D: "逻辑"
     },
     answer: "D",
-    category: "调试技术"
+    category: "维护与诊断"
   },
   {
     id: 112,
@@ -1455,7 +1455,7 @@ export const questionBank = [
       D: "加速度信号"
     },
     answer: "B",
-    category: "力控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 113,
@@ -1468,7 +1468,7 @@ export const questionBank = [
       D: "手指指尖"
     },
     answer: "C",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 114,
@@ -1481,7 +1481,7 @@ export const questionBank = [
       D: "气动驱动"
     },
     answer: "D",
-    category: "打磨系统"
+    category: "应用技术"
   },
   {
     id: 115,
@@ -1494,7 +1494,7 @@ export const questionBank = [
       D: "安全点和起始点"
     },
     answer: "C",
-    category: "打磨系统"
+    category: "应用技术"
   },
   {
     id: 116,
@@ -1507,7 +1507,7 @@ export const questionBank = [
       D: "以上说法都不正确"
     },
     answer: "C",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 117,
@@ -1520,7 +1520,7 @@ export const questionBank = [
       D: "焊丝直径"
     },
     answer: "D",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 118,
@@ -1533,7 +1533,7 @@ export const questionBank = [
       D: "最优控制"
     },
     answer: "A",
-    category: "控制技术"
+    category: "通信与集成"
   },
   {
     id: 119,
@@ -1546,7 +1546,7 @@ export const questionBank = [
       D: "SC、AC、DC"
     },
     answer: "B",
-    category: "驱动系统"
+    category: "硬件与IO控制"
   },
   {
     id: 120,
@@ -1559,7 +1559,7 @@ export const questionBank = [
       D: "气体保护焊和氩弧焊"
     },
     answer: "A",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 121,
@@ -1572,7 +1572,7 @@ export const questionBank = [
       D: "②③④⑤"
     },
     answer: "B",
-    category: "机器人类型"
+    category: "通信与集成"
   },
   {
     id: 122,
@@ -1585,7 +1585,7 @@ export const questionBank = [
       D: "机器人碰撞工件，原点偏移时"
     },
     answer: "C",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 123,
@@ -1598,7 +1598,7 @@ export const questionBank = [
       D: "LR"
     },
     answer: "D",
-    category: "寄存器系统"
+    category: "编程与指令"
   },
   {
     id: 124,
@@ -1611,7 +1611,7 @@ export const questionBank = [
       D: "Profibus- DP"
     },
     answer: "B",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 125,
@@ -1624,7 +1624,7 @@ export const questionBank = [
       D: "系统"
     },
     answer: "B",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 126,
@@ -1637,7 +1637,7 @@ export const questionBank = [
       D: "5"
     },
     answer: "C",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 127,
@@ -1650,7 +1650,7 @@ export const questionBank = [
       D: "十六"
     },
     answer: "A",
-    category: "编程技术"
+    category: "编程与指令"
   },
   {
     id: 128,
@@ -1663,7 +1663,7 @@ export const questionBank = [
       D: "模拟量输出"
     },
     answer: "C",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 129,
@@ -1676,7 +1676,7 @@ export const questionBank = [
       D: "13路模拟量输出"
     },
     answer: "A",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 130,
@@ -1689,7 +1689,7 @@ export const questionBank = [
       D: "32"
     },
     answer: "B",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 131,
@@ -1702,7 +1702,7 @@ export const questionBank = [
       D: "变频器"
     },
     answer: "A",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 132,
@@ -1715,7 +1715,7 @@ export const questionBank = [
       D: "扩展数字量IO"
     },
     answer: "A",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 133,
@@ -1728,7 +1728,7 @@ export const questionBank = [
       D: "AO1"
     },
     answer: "A",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 134,
@@ -1741,7 +1741,7 @@ export const questionBank = [
       D: "R"
     },
     answer: "D",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 135,
@@ -1754,7 +1754,7 @@ export const questionBank = [
       D: "4"
     },
     answer: "A",
-    category: "编程技术"
+    category: "编程与指令"
   },
   {
     id: 136,
@@ -1767,7 +1767,7 @@ export const questionBank = [
       D: "GOTO"
     },
     answer: "C",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 137,
@@ -1780,7 +1780,7 @@ export const questionBank = [
       D: "3"
     },
     answer: "B",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 138,
@@ -1793,7 +1793,7 @@ export const questionBank = [
       D: "3"
     },
     answer: "A",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 139,
@@ -1806,7 +1806,7 @@ export const questionBank = [
       D: "网络通信"
     },
     answer: "D",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 140,
@@ -1819,7 +1819,7 @@ export const questionBank = [
       D: "其他"
     },
     answer: "C",
-    category: "RFID技术"
+    category: "硬件与IO控制"
   },
   {
     id: 141,
@@ -1832,7 +1832,7 @@ export const questionBank = [
       D: "1214CDC/DC/DC"
     },
     answer: "B",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 142,
@@ -1845,7 +1845,7 @@ export const questionBank = [
       D: "BOOL"
     },
     answer: "B",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 143,
@@ -1858,7 +1858,7 @@ export const questionBank = [
       D: "64"
     },
     answer: "D",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 144,
@@ -1871,7 +1871,7 @@ export const questionBank = [
       D: "Q0.4"
     },
     answer: "C",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 145,
@@ -1884,7 +1884,7 @@ export const questionBank = [
       D: "1.LBL[7] 2.MOVE JR[0] 3. IF R[70] THEN LBL[7]"
     },
     answer: "B",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 146,
@@ -1897,7 +1897,7 @@ export const questionBank = [
       D: "指定跳转的次数"
     },
     answer: "C",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 147,
@@ -1910,7 +1910,7 @@ export const questionBank = [
       D: "旋转"
     },
     answer: "C",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 148,
@@ -1923,7 +1923,7 @@ export const questionBank = [
       D: "点位的调用"
     },
     answer: "B",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 149,
@@ -1936,7 +1936,7 @@ export const questionBank = [
       D: "WAIT"
     },
     answer: "C",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 150,
@@ -1949,7 +1949,7 @@ export const questionBank = [
       D: "LBL指令"
     },
     answer: "A",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 151,
@@ -1962,7 +1962,7 @@ export const questionBank = [
       D: "有字母、数字、下划线（）和汉字组成"
     },
     answer: "D",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 152,
@@ -1975,7 +1975,7 @@ export const questionBank = [
       D: "以上都有"
     },
     answer: "D",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 153,
@@ -1988,7 +1988,7 @@ export const questionBank = [
       D: "顺序执行"
     },
     answer: "B",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 154,
@@ -2001,7 +2001,7 @@ export const questionBank = [
       D: "DESCRIBLE"
     },
     answer: "A",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 155,
@@ -2014,7 +2014,7 @@ export const questionBank = [
       D: "1. EVENTON EV4 D_IN[20]=12. MOVE ROBOT P23. EVENTOFF EV4"
     },
     answer: "B",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 156,
@@ -2027,7 +2027,7 @@ export const questionBank = [
       D: "以上三个"
     },
     answer: "A",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 157,
@@ -2040,7 +2040,7 @@ export const questionBank = [
       D: "实轴"
     },
     answer: "B",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 158,
@@ -2053,7 +2053,7 @@ export const questionBank = [
       D: "坐标系选择栏"
     },
     answer: "C",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 159,
@@ -2066,7 +2066,7 @@ export const questionBank = [
       D: "直角点位寄存器赋值指定坐标系号数值"
     },
     answer: "D",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 160,
@@ -2079,7 +2079,7 @@ export const questionBank = [
       D: "复合变换"
     },
     answer: "B",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 161,
@@ -2092,7 +2092,7 @@ export const questionBank = [
       D: "按次数"
     },
     answer: "B",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 162,
@@ -2105,7 +2105,7 @@ export const questionBank = [
       D: "多个程序中出现同一点位时，依次程序主次关系进行运动。"
     },
     answer: "D",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 163,
@@ -2118,7 +2118,7 @@ export const questionBank = [
       D: "IF DI[5]=ON GOTO LBL[]"
     },
     answer: "D",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 164,
@@ -2131,7 +2131,7 @@ export const questionBank = [
       D: "无限制"
     },
     answer: "A",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 165,
@@ -2144,7 +2144,7 @@ export const questionBank = [
       D: "6个和3个"
     },
     answer: "B",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 166,
@@ -2157,7 +2157,7 @@ export const questionBank = [
       D: "SLEEP"
     },
     answer: "A",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 167,
@@ -2170,7 +2170,7 @@ export const questionBank = [
       D: "DO"
     },
     answer: "B",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 168,
@@ -2183,7 +2183,7 @@ export const questionBank = [
       D: "sleep"
     },
     answer: "B",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 169,
@@ -2196,7 +2196,7 @@ export const questionBank = [
       D: "软件故障"
     },
     answer: "D",
-    category: "故障诊断"
+    category: "维护与诊断"
   },
   {
     id: 170,
@@ -2209,7 +2209,7 @@ export const questionBank = [
       D: "功能设计"
     },
     answer: "C",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 171,
@@ -2222,7 +2222,7 @@ export const questionBank = [
       D: "工作速度"
     },
     answer: "B",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 172,
@@ -2235,7 +2235,7 @@ export const questionBank = [
       D: "局域网"
     },
     answer: "A",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 173,
@@ -2248,7 +2248,7 @@ export const questionBank = [
       D: "循环扫描工作方式"
     },
     answer: "D",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 174,
@@ -2261,7 +2261,7 @@ export const questionBank = [
       D: "LREAL"
     },
     answer: "B",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 175,
@@ -2274,7 +2274,7 @@ export const questionBank = [
       D: "REF变量"
     },
     answer: "A",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 176,
@@ -2287,7 +2287,7 @@ export const questionBank = [
       D: "仿真编程"
     },
     answer: "D",
-    category: "编程技术"
+    category: "编程与指令"
   },
   {
     id: 177,
@@ -2300,7 +2300,7 @@ export const questionBank = [
       D: "1200"
     },
     answer: "B",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 178,
@@ -2313,7 +2313,7 @@ export const questionBank = [
       D: "系统工作的任意时刻只能有一个状态是活动的"
     },
     answer: "A",
-    category: "控制技术"
+    category: "通信与集成"
   },
   {
     id: 179,
@@ -2326,7 +2326,7 @@ export const questionBank = [
       D: "焊接系统"
     },
     answer: "C",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 180,
@@ -2339,7 +2339,7 @@ export const questionBank = [
       D: "灵敏度"
     },
     answer: "C",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 181,
@@ -2352,7 +2352,7 @@ export const questionBank = [
       D: "局域网"
     },
     answer: "A",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 182,
@@ -2365,7 +2365,7 @@ export const questionBank = [
       D: "压力"
     },
     answer: "C",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 183,
@@ -2378,7 +2378,7 @@ export const questionBank = [
       D: "灵敏度"
     },
     answer: "C",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 184,
@@ -2391,7 +2391,7 @@ export const questionBank = [
       D: "智能控制"
     },
     answer: "C",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 185,
@@ -2404,7 +2404,7 @@ export const questionBank = [
       D: "4"
     },
     answer: "B",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 186,
@@ -2417,7 +2417,7 @@ export const questionBank = [
       D: "速度传感器"
     },
     answer: "C",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 187,
@@ -2430,7 +2430,7 @@ export const questionBank = [
       D: "重量增量"
     },
     answer: "C",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 188,
@@ -2443,7 +2443,7 @@ export const questionBank = [
       D: "动力学逆问题"
     },
     answer: "B",
-    category: "运动控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 189,
@@ -2456,7 +2456,7 @@ export const questionBank = [
       D: "光电码盘"
     },
     answer: "C",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 190,
@@ -2469,7 +2469,7 @@ export const questionBank = [
       D: "45°"
     },
     answer: "A",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 191,
@@ -2482,7 +2482,7 @@ export const questionBank = [
       D: "50"
     },
     answer: "B",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 192,
@@ -2495,7 +2495,7 @@ export const questionBank = [
       D: "4"
     },
     answer: "B",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 193,
@@ -2508,7 +2508,7 @@ export const questionBank = [
       D: "操作面板I/O"
     },
     answer: "A",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 194,
@@ -2521,7 +2521,7 @@ export const questionBank = [
       D: "位置"
     },
     answer: "D",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 195,
@@ -2534,7 +2534,7 @@ export const questionBank = [
       D: "独特性"
     },
     answer: "D",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 196,
@@ -2547,7 +2547,7 @@ export const questionBank = [
       D: "图像识别"
     },
     answer: "A",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 197,
@@ -2560,7 +2560,7 @@ export const questionBank = [
       D: "基于图像的视觉伺服系统"
     },
     answer: "D",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 198,
@@ -2573,7 +2573,7 @@ export const questionBank = [
       D: "G"
     },
     answer: "C",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 199,
@@ -2586,7 +2586,7 @@ export const questionBank = [
       D: "①②③④⑤"
     },
     answer: "C",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 200,
@@ -2599,7 +2599,7 @@ export const questionBank = [
       D: "①③④"
     },
     answer: "B",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 201,
@@ -2612,7 +2612,7 @@ export const questionBank = [
       D: "①③④"
     },
     answer: "A",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 202,
@@ -2625,7 +2625,7 @@ export const questionBank = [
       D: "以上都是"
     },
     answer: "D",
-    category: "故障诊断"
+    category: "维护与诊断"
   },
   {
     id: 203,
@@ -2638,7 +2638,7 @@ export const questionBank = [
       D: "①②④"
     },
     answer: "A",
-    category: "故障诊断"
+    category: "维护与诊断"
   },
   {
     id: 204,
@@ -2651,7 +2651,7 @@ export const questionBank = [
       D: "oPRG_PAUSE"
     },
     answer: "B",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 205,
@@ -2664,7 +2664,7 @@ export const questionBank = [
       D: "N点标定"
     },
     answer: "B",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 206,
@@ -2677,7 +2677,7 @@ export const questionBank = [
       D: "应用层"
     },
     answer: "A",
-    category: "RFID技术"
+    category: "硬件与IO控制"
   },
   {
     id: 207,
@@ -2690,7 +2690,7 @@ export const questionBank = [
       D: "按标签芯片分"
     },
     answer: "C",
-    category: "RFID技术"
+    category: "硬件与IO控制"
   },
   {
     id: 208,
@@ -2703,7 +2703,7 @@ export const questionBank = [
       D: "计算机通讯网络"
     },
     answer: "A",
-    category: "RFID技术"
+    category: "硬件与IO控制"
   },
   {
     id: 209,
@@ -2716,7 +2716,7 @@ export const questionBank = [
       D: "读写模块"
     },
     answer: "B",
-    category: "RFID技术"
+    category: "硬件与IO控制"
   },
   {
     id: 210,
@@ -2729,7 +2729,7 @@ export const questionBank = [
       D: "微波系统"
     },
     answer: "A",
-    category: "RFID技术"
+    category: "硬件与IO控制"
   },
   {
     id: 211,
@@ -2742,7 +2742,7 @@ export const questionBank = [
       D: "体积要足够小"
     },
     answer: "A",
-    category: "RFID技术"
+    category: "硬件与IO控制"
   },
   {
     id: 212,
@@ -2755,7 +2755,7 @@ export const questionBank = [
       D: "oPRG_KILLED"
     },
     answer: "C",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 213,
@@ -2768,7 +2768,7 @@ export const questionBank = [
       D: "oPRG_READY"
     },
     answer: "A",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 214,
@@ -2781,7 +2781,7 @@ export const questionBank = [
       D: "智能决策系统"
     },
     answer: "A",
-    category: "智能控制"
+    category: "通信与集成"
   },
   {
     id: 215,
@@ -2794,7 +2794,7 @@ export const questionBank = [
       D: "控制系统仿真"
     },
     answer: "A",
-    category: "智能控制"
+    category: "通信与集成"
   },
   {
     id: 216,
@@ -2807,7 +2807,7 @@ export const questionBank = [
       D: "机器人"
     },
     answer: "A",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 217,
@@ -2820,7 +2820,7 @@ export const questionBank = [
       D: "神经网络控制"
     },
     answer: "A",
-    category: "智能控制"
+    category: "通信与集成"
   },
   {
     id: 218,
@@ -2833,7 +2833,7 @@ export const questionBank = [
       D: "具有自适应能力"
     },
     answer: "A",
-    category: "智能控制"
+    category: "通信与集成"
   },
   {
     id: 219,
@@ -2846,7 +2846,7 @@ export const questionBank = [
       D: "物理能"
     },
     answer: "A",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 220,
@@ -2859,7 +2859,7 @@ export const questionBank = [
       D: "零接口"
     },
     answer: "A",
-    category: "硬件配置"
+    category: "硬件与IO控制"
   },
   {
     id: 221,
@@ -2872,7 +2872,7 @@ export const questionBank = [
       D: "①④③"
     },
     answer: "B",
-    category: "末端执行器"
+    category: "硬件与IO控制"
   },
   {
     id: 222,
@@ -2885,7 +2885,7 @@ export const questionBank = [
       D: "1"
     },
     answer: "A",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 223,
@@ -2898,7 +2898,7 @@ export const questionBank = [
       D: "无法确定"
     },
     answer: "B",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 224,
@@ -2911,7 +2911,7 @@ export const questionBank = [
       D: "增压式吸附"
     },
     answer: "D",
-    category: "末端执行器"
+    category: "硬件与IO控制"
   },
   {
     id: 225,
@@ -2924,7 +2924,7 @@ export const questionBank = [
       D: "外撑式"
     },
     answer: "D",
-    category: "末端执行器"
+    category: "硬件与IO控制"
   },
   {
     id: 226,
@@ -2937,7 +2937,7 @@ export const questionBank = [
       D: "联动"
     },
     answer: "D",
-    category: "驱动系统"
+    category: "硬件与IO控制"
   },
   {
     id: 227,
@@ -2950,7 +2950,7 @@ export const questionBank = [
       D: "发光二极管"
     },
     answer: "D",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 228,
@@ -2963,7 +2963,7 @@ export const questionBank = [
       D: "表示等待R[1]的数值为1的时候程序继续执行"
     },
     answer: "D",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 229,
@@ -2976,7 +2976,7 @@ export const questionBank = [
       D: "①③④"
     },
     answer: "B",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 230,
@@ -2989,7 +2989,7 @@ export const questionBank = [
       D: "wait(D_IN[10],OFF)"
     },
     answer: "B",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 231,
@@ -3002,7 +3002,7 @@ export const questionBank = [
       D: "oPRG_READY"
     },
     answer: "B",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 232,
@@ -3015,7 +3015,7 @@ export const questionBank = [
       D: "wait(D_IN[11],OFF)"
     },
     answer: "C",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 233,
@@ -3028,7 +3028,7 @@ export const questionBank = [
       D: "中间继电器M"
     },
     answer: "C",
-    category: "人机界面"
+    category: "系统配置与操作"
   },
   {
     id: 234,
@@ -3041,7 +3041,7 @@ export const questionBank = [
       D: "文本"
     },
     answer: "C",
-    category: "人机界面"
+    category: "系统配置与操作"
   },
   {
     id: 235,
@@ -3054,7 +3054,7 @@ export const questionBank = [
       D: "CPU支持的IO点数"
     },
     answer: "D",
-    category: "硬件配置"
+    category: "硬件与IO控制"
   },
   {
     id: 236,
@@ -3067,7 +3067,7 @@ export const questionBank = [
       D: "设备组态"
     },
     answer: "A",
-    category: "人机界面"
+    category: "系统配置与操作"
   },
   {
     id: 237,
@@ -3080,7 +3080,7 @@ export const questionBank = [
       D: "面板中事件的数量"
     },
     answer: "A",
-    category: "人机界面"
+    category: "系统配置与操作"
   },
   {
     id: 238,
@@ -3093,7 +3093,7 @@ export const questionBank = [
       D: "启动值"
     },
     answer: "B",
-    category: "人机界面"
+    category: "系统配置与操作"
   },
   {
     id: 239,
@@ -3106,7 +3106,7 @@ export const questionBank = [
       D: "DWORD"
     },
     answer: "C",
-    category: "人机界面"
+    category: "系统配置与操作"
   },
   {
     id: 240,
@@ -3119,7 +3119,7 @@ export const questionBank = [
       D: "远程模式"
     },
     answer: "D",
-    category: "操作模式"
+    category: "系统配置与操作"
   },
   {
     id: 241,
@@ -3132,7 +3132,7 @@ export const questionBank = [
       D: "输出继电器Y"
     },
     answer: "D",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 242,
@@ -3145,7 +3145,7 @@ export const questionBank = [
       D: "7"
     },
     answer: "A",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 243,
@@ -3158,7 +3158,7 @@ export const questionBank = [
       D: "①③④"
     },
     answer: "B",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 244,
@@ -3171,7 +3171,7 @@ export const questionBank = [
       D: "新的或旧的都行"
     },
     answer: "A",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 245,
@@ -3197,7 +3197,7 @@ export const questionBank = [
       D: "弧焊机器人"
     },
     answer: "D",
-    category: "机器人类型"
+    category: "通信与集成"
   },
   {
     id: 247,
@@ -3210,7 +3210,7 @@ export const questionBank = [
       D: "机座"
     },
     answer: "C",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 248,
@@ -3223,7 +3223,7 @@ export const questionBank = [
       D: "1600mm/s"
     },
     answer: "A",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 249,
@@ -3236,7 +3236,7 @@ export const questionBank = [
       D: "安全模式"
     },
     answer: "A",
-    category: "操作模式"
+    category: "系统配置与操作"
   },
   {
     id: 250,
@@ -3249,7 +3249,7 @@ export const questionBank = [
       D: "急停报错"
     },
     answer: "A",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 251,
@@ -3262,7 +3262,7 @@ export const questionBank = [
       D: "机电产品"
     },
     answer: "D",
-    category: "机器人类型"
+    category: "通信与集成"
   },
   {
     id: 252,
@@ -3275,7 +3275,7 @@ export const questionBank = [
       D: "点焊"
     },
     answer: "A",
-    category: "控制技术"
+    category: "通信与集成"
   },
   {
     id: 253,
@@ -3288,7 +3288,7 @@ export const questionBank = [
       D: "弧焊机器人"
     },
     answer: "D",
-    category: "机器人类型"
+    category: "通信与集成"
   },
   {
     id: 254,
@@ -3301,7 +3301,7 @@ export const questionBank = [
       D: "步进电机"
     },
     answer: "B",
-    category: "机器人类型"
+    category: "通信与集成"
   },
   {
     id: 255,
@@ -3314,7 +3314,7 @@ export const questionBank = [
       D: "①②③④⑤"
     },
     answer: "C",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 256,
@@ -3327,7 +3327,7 @@ export const questionBank = [
       D: "①④"
     },
     answer: "A",
-    category: "控制技术"
+    category: "通信与集成"
   },
   {
     id: 257,
@@ -3340,7 +3340,7 @@ export const questionBank = [
       D: "255"
     },
     answer: "C",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 258,
@@ -3353,7 +3353,7 @@ export const questionBank = [
       D: "图像存储"
     },
     answer: "D",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 259,
@@ -3366,7 +3366,7 @@ export const questionBank = [
       D: "2MB"
     },
     answer: "B",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 260,
@@ -3379,7 +3379,7 @@ export const questionBank = [
       D: "梯形图中的继电器不是物理继电器，而是软继电器"
     },
     answer: "B",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 261,
@@ -3392,7 +3392,7 @@ export const questionBank = [
       D: "CTD"
     },
     answer: "A",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 262,
@@ -3405,7 +3405,7 @@ export const questionBank = [
       D: "M"
     },
     answer: "A",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 263,
@@ -3418,7 +3418,7 @@ export const questionBank = [
       D: "C"
     },
     answer: "A",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 264,
@@ -3431,7 +3431,7 @@ export const questionBank = [
       D: "视情况而定"
     },
     answer: "A",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 265,
@@ -3444,7 +3444,7 @@ export const questionBank = [
       D: "无限制"
     },
     answer: "A",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 266,
@@ -3457,7 +3457,7 @@ export const questionBank = [
       D: "森政弘"
     },
     answer: "A",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 267,
@@ -3470,7 +3470,7 @@ export const questionBank = [
       D: "运动的应用"
     },
     answer: "A",
-    category: "运动学"
+    category: "坐标系与运动控制"
   },
   {
     id: 268,
@@ -3483,7 +3483,7 @@ export const questionBank = [
       D: "动力的应用"
     },
     answer: "A",
-    category: "动力学"
+    category: "坐标系与运动控制"
   },
   {
     id: 269,
@@ -3496,7 +3496,7 @@ export const questionBank = [
       D: "温度"
     },
     answer: "D",
-    category: "气动系统"
+    category: "硬件与IO控制"
   },
   {
     id: 270,
@@ -3509,7 +3509,7 @@ export const questionBank = [
       D: "截止阀"
     },
     answer: "D",
-    category: "气动系统"
+    category: "硬件与IO控制"
   },
   {
     id: 271,
@@ -3522,7 +3522,7 @@ export const questionBank = [
       D: "IR[1]<0"
     },
     answer: "C",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 272,
@@ -3535,7 +3535,7 @@ export const questionBank = [
       D: "①③④"
     },
     answer: "A",
-    category: "控制技术"
+    category: "通信与集成"
   },
   {
     id: 273,
@@ -3548,7 +3548,7 @@ export const questionBank = [
       D: "只与运动速度有关"
     },
     answer: "A",
-    category: "运动控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 274,
@@ -3561,7 +3561,7 @@ export const questionBank = [
       D: "程序报错"
     },
     answer: "A",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 275,
@@ -3574,7 +3574,7 @@ export const questionBank = [
       D: "特种机器人"
     },
     answer: "A",
-    category: "机器人类型"
+    category: "通信与集成"
   },
   {
     id: 276,
@@ -3587,7 +3587,7 @@ export const questionBank = [
       D: "姿态与速度"
     },
     answer: "A",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 277,
@@ -3600,7 +3600,7 @@ export const questionBank = [
       D: "动力学逆问题"
     },
     answer: "A",
-    category: "运动控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 278,
@@ -3613,7 +3613,7 @@ export const questionBank = [
       D: "记忆"
     },
     answer: "A",
-    category: "电气控制"
+    category: "通信与集成"
   },
   {
     id: 279,
@@ -3626,7 +3626,7 @@ export const questionBank = [
       D: "IEC计数器的背景数据可进行保持性设定"
     },
     answer: "D",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 280,
@@ -3639,7 +3639,7 @@ export const questionBank = [
       D: "TEMP"
     },
     answer: "D",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 281,
@@ -3652,7 +3652,7 @@ export const questionBank = [
       D: "SCL"
     },
     answer: "C",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 282,
@@ -3665,7 +3665,7 @@ export const questionBank = [
       D: "多层前向神经网络"
     },
     answer: "A",
-    category: "智能控制"
+    category: "通信与集成"
   },
   {
     id: 283,
@@ -3678,7 +3678,7 @@ export const questionBank = [
       D: "分离越大越好"
     },
     answer: "A",
-    category: "编程技术"
+    category: "编程与指令"
   },
   {
     id: 284,
@@ -3691,7 +3691,7 @@ export const questionBank = [
       D: "插补算法"
     },
     answer: "D",
-    category: "轨迹规划"
+    category: "坐标系与运动控制"
   },
   {
     id: 285,
@@ -3704,7 +3704,7 @@ export const questionBank = [
       D: "任意位置"
     },
     answer: "B",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 286,
@@ -3717,7 +3717,7 @@ export const questionBank = [
       D: "6次"
     },
     answer: "A",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 287,
@@ -3730,7 +3730,7 @@ export const questionBank = [
       D: "192.168.0.123/27和192.168.0.100/27"
     },
     answer: "B",
-    category: "网络通信"
+    category: "通信与集成"
   },
   {
     id: 288,
@@ -3743,7 +3743,7 @@ export const questionBank = [
       D: "①③"
     },
     answer: "C",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 289,
@@ -3756,7 +3756,7 @@ export const questionBank = [
       D: "①③④"
     },
     answer: "C",
-    category: "寄存器系统"
+    category: "编程与指令"
   },
   {
     id: 290,
@@ -3769,7 +3769,7 @@ export const questionBank = [
       D: "①②③"
     },
     answer: "D",
-    category: "编程技术"
+    category: "编程与指令"
   },
   {
     id: 291,
@@ -3782,7 +3782,7 @@ export const questionBank = [
       D: "InteRobot"
     },
     answer: "D",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 292,
@@ -3795,7 +3795,7 @@ export const questionBank = [
       D: "Delmia"
     },
     answer: "C",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 293,
@@ -3808,7 +3808,7 @@ export const questionBank = [
       D: "安川"
     },
     answer: "C",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 294,
@@ -3821,7 +3821,7 @@ export const questionBank = [
       D: "③②①④"
     },
     answer: "A",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 295,
@@ -3834,7 +3834,7 @@ export const questionBank = [
       D: "滚动【鼠标滚轮】"
     },
     answer: "D",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 296,
@@ -3847,7 +3847,7 @@ export const questionBank = [
       D: "IGS"
     },
     answer: "A",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 297,
@@ -3860,7 +3860,7 @@ export const questionBank = [
       D: "控制仿真速度"
     },
     answer: "A",
-    category: "仿真技术"
+    category: "应用技术"
   },
   {
     id: 298,
@@ -3873,7 +3873,7 @@ export const questionBank = [
       D: "父系坐标是其它坐标系的基础"
     },
     answer: "A",
-    category: "仿真技术"
+    category: "应用技术"
   },
   {
     id: 299,
@@ -3886,7 +3886,7 @@ export const questionBank = [
       D: "示教编程和软件编程"
     },
     answer: "A",
-    category: "编程技术"
+    category: "编程与指令"
   },
   {
     id: 300,
@@ -3899,7 +3899,7 @@ export const questionBank = [
       D: "IGS"
     },
     answer: "A",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 301,
@@ -3912,7 +3912,7 @@ export const questionBank = [
       D: "零件装配"
     },
     answer: "C",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 302,
@@ -3925,7 +3925,7 @@ export const questionBank = [
       D: "仿真运行以检验离线程序"
     },
     answer: "C",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 303,
@@ -3938,7 +3938,7 @@ export const questionBank = [
       D: "不适用于复杂路径"
     },
     answer: "B",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 304,
@@ -3951,7 +3951,7 @@ export const questionBank = [
       D: "工业机器人运动控制编程"
     },
     answer: "A",
-    category: "仿真技术"
+    category: "应用技术"
   },
   {
     id: 305,
@@ -3964,7 +3964,7 @@ export const questionBank = [
       D: "焊弧枪"
     },
     answer: "B",
-    category: "外围设备"
+    category: "硬件与IO控制"
   },
   {
     id: 306,
@@ -3977,7 +3977,7 @@ export const questionBank = [
       D: "工具坐标系"
     },
     answer: "A",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 307,
@@ -3990,7 +3990,7 @@ export const questionBank = [
       D: "9点"
     },
     answer: "B",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 308,
@@ -4003,7 +4003,7 @@ export const questionBank = [
       D: "PRT"
     },
     answer: "A",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 309,
@@ -4016,7 +4016,7 @@ export const questionBank = [
       D: "shift+右击"
     },
     answer: "A",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 310,
@@ -4029,7 +4029,7 @@ export const questionBank = [
       D: "长按鼠标"
     },
     answer: "C",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 311,
@@ -4042,7 +4042,7 @@ export const questionBank = [
       D: "*.doc"
     },
     answer: "A",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 312,
@@ -4055,7 +4055,7 @@ export const questionBank = [
       D: "圆"
     },
     answer: "A",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 313,
@@ -4068,7 +4068,7 @@ export const questionBank = [
       D: "更改设置"
     },
     answer: "A",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 314,
@@ -4081,7 +4081,7 @@ export const questionBank = [
       D: "更改设置"
     },
     answer: "B",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 315,
@@ -4094,7 +4094,7 @@ export const questionBank = [
       D: "更改设置"
     },
     answer: "B",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 316,
@@ -4107,7 +4107,7 @@ export const questionBank = [
       D: "坐标方向"
     },
     answer: "B",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 317,
@@ -4120,7 +4120,7 @@ export const questionBank = [
       D: "工具X轴的与基座标的X轴夹角"
     },
     answer: "A",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 318,
@@ -4133,7 +4133,7 @@ export const questionBank = [
       D: "工具中心点"
     },
     answer: "A",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 319,
@@ -4146,7 +4146,7 @@ export const questionBank = [
       D: "Y和Z"
     },
     answer: "A",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 320,
@@ -4159,7 +4159,7 @@ export const questionBank = [
       D: "5"
     },
     answer: "B",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 321,
@@ -4172,7 +4172,7 @@ export const questionBank = [
       D: "X和Z"
     },
     answer: "D",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 322,
@@ -4185,7 +4185,7 @@ export const questionBank = [
       D: "启动虚拟示教器"
     },
     answer: "B",
-    category: "虚拟仿真"
+    category: "应用技术"
   },
   {
     id: 323,
@@ -4198,7 +4198,7 @@ export const questionBank = [
       D: "安全规范和标准"
     },
     answer: "A",
-    category: "系统设计"
+    category: "系统配置与操作"
   },
   {
     id: 324,
@@ -4211,7 +4211,7 @@ export const questionBank = [
       D: "TCP跟踪"
     },
     answer: "B",
-    category: "轨迹规划"
+    category: "坐标系与运动控制"
   },
   {
     id: 325,
@@ -4224,7 +4224,7 @@ export const questionBank = [
       D: "姿态调整"
     },
     answer: "C",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 326,
@@ -4237,7 +4237,7 @@ export const questionBank = [
       D: "模型"
     },
     answer: "A",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 327,
@@ -4250,7 +4250,7 @@ export const questionBank = [
       D: "以上都是"
     },
     answer: "D",
-    category: "码垛应用"
+    category: "应用技术"
   },
   {
     id: 328,
@@ -4263,7 +4263,7 @@ export const questionBank = [
       D: "文本文档"
     },
     answer: "D",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 329,
@@ -4276,7 +4276,7 @@ export const questionBank = [
       D: "I/O仿真器"
     },
     answer: "A",
-    category: "仿真技术"
+    category: "应用技术"
   },
   {
     id: 330,
@@ -4289,7 +4289,7 @@ export const questionBank = [
       D: "偏移"
     },
     answer: "C",
-    category: "码垛应用"
+    category: "应用技术"
   },
   {
     id: 331,
@@ -4302,7 +4302,7 @@ export const questionBank = [
       D: "以上都不是"
     },
     answer: "B",
-    category: "运动指令"
+    category: "编程与指令"
   },
   {
     id: 332,
@@ -4315,7 +4315,7 @@ export const questionBank = [
       D: "工具"
     },
     answer: "D",
-    category: "轨迹规划"
+    category: "坐标系与运动控制"
   },
   {
     id: 333,
@@ -4328,7 +4328,7 @@ export const questionBank = [
       D: "位姿轨迹和运动速度"
     },
     answer: "A",
-    category: "控制技术"
+    category: "通信与集成"
   },
   {
     id: 334,
@@ -4341,7 +4341,7 @@ export const questionBank = [
       D: "回避与焊枪的干涉"
     },
     answer: "C",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 335,
@@ -4354,7 +4354,7 @@ export const questionBank = [
       D: "碰撞检测"
     },
     answer: "D",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 336,
@@ -4367,7 +4367,7 @@ export const questionBank = [
       D: "RAPID"
     },
     answer: "A",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 337,
@@ -4380,7 +4380,7 @@ export const questionBank = [
       D: "任意"
     },
     answer: "D",
-    category: "仿真技术"
+    category: "应用技术"
   },
   {
     id: 338,
@@ -4393,7 +4393,7 @@ export const questionBank = [
       D: "TCP跟踪"
     },
     answer: "A",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 339,
@@ -4406,7 +4406,7 @@ export const questionBank = [
       D: "基座"
     },
     answer: "C",
-    category: "性能分析"
+    category: "维护与诊断"
   },
   {
     id: 340,
@@ -4419,7 +4419,7 @@ export const questionBank = [
       D: "手腕奇异点"
     },
     answer: "B",
-    category: "仿真技术"
+    category: "应用技术"
   },
   {
     id: 341,
@@ -4432,7 +4432,7 @@ export const questionBank = [
       D: "手腕奇异点"
     },
     answer: "C",
-    category: "运动控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 342,
@@ -4445,7 +4445,7 @@ export const questionBank = [
       D: "虚"
     },
     answer: "D",
-    category: "奇异点处理"
+    category: "坐标系与运动控制"
   },
   {
     id: 343,
@@ -4458,7 +4458,7 @@ export const questionBank = [
       D: "手腕奇异点"
     },
     answer: "B",
-    category: "关节限值"
+    category: "坐标系与运动控制"
   },
   {
     id: 344,
@@ -4471,7 +4471,7 @@ export const questionBank = [
       D: "加速度信号"
     },
     answer: "B",
-    category: "力控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 345,
@@ -4484,7 +4484,7 @@ export const questionBank = [
       D: "1.5,1.5"
     },
     answer: "A",
-    category: "电气安全"
+    category: "基础知识与安全"
   },
   {
     id: 346,
@@ -4497,7 +4497,7 @@ export const questionBank = [
       D: "末端执行器"
     },
     answer: "C",
-    category: "维护保养"
+    category: "维护与诊断"
   },
   {
     id: 347,
@@ -4510,7 +4510,7 @@ export const questionBank = [
       D: "123654"
     },
     answer: "B",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 348,
@@ -4523,7 +4523,7 @@ export const questionBank = [
       D: "以上都不是"
     },
     answer: "A",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 349,
@@ -4536,7 +4536,7 @@ export const questionBank = [
       D: "工具坐标更改后"
     },
     answer: "B",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 350,
@@ -4549,7 +4549,7 @@ export const questionBank = [
       D: "都可以"
     },
     answer: "A",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 351,
@@ -4562,7 +4562,7 @@ export const questionBank = [
       D: "都需要"
     },
     answer: "C",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 352,
@@ -4575,7 +4575,7 @@ export const questionBank = [
       D: "线路的连接"
     },
     answer: "C",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 353,
@@ -4588,7 +4588,7 @@ export const questionBank = [
       D: "第五轴30度，其余轴0度"
     },
     answer: "A",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 354,
@@ -4601,7 +4601,7 @@ export const questionBank = [
       D: "以上都不对"
     },
     answer: "A",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 355,
@@ -4614,7 +4614,7 @@ export const questionBank = [
       D: "电机校准偏移量在出厂时就已确定"
     },
     answer: "D",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 356,
@@ -4627,7 +4627,7 @@ export const questionBank = [
       D: "投入运行"
     },
     answer: "D",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 357,
@@ -4640,7 +4640,7 @@ export const questionBank = [
       D: "位置稳定时间"
     },
     answer: "A",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 358,
@@ -4653,7 +4653,7 @@ export const questionBank = [
       D: "位姿特性漂移"
     },
     answer: "D",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 359,
@@ -4666,7 +4666,7 @@ export const questionBank = [
       D: "拐角偏差"
     },
     answer: "C",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 360,
@@ -4679,7 +4679,7 @@ export const questionBank = [
       D: "8小时"
     },
     answer: "D",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 361,
@@ -4692,7 +4692,7 @@ export const questionBank = [
       D: "30次"
     },
     answer: "C",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 362,
@@ -4705,7 +4705,7 @@ export const questionBank = [
       D: "5个"
     },
     answer: "B",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 363,
@@ -4718,7 +4718,7 @@ export const questionBank = [
       D: "距离重复性"
     },
     answer: "A",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 364,
@@ -4731,7 +4731,7 @@ export const questionBank = [
       D: "距离重复性"
     },
     answer: "B",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 365,
@@ -4744,7 +4744,7 @@ export const questionBank = [
       D: "位姿准确度"
     },
     answer: "C",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 366,
@@ -4757,7 +4757,7 @@ export const questionBank = [
       D: "位姿准确度"
     },
     answer: "A",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 367,
@@ -4770,7 +4770,7 @@ export const questionBank = [
       D: "位置稳定时间"
     },
     answer: "D",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 368,
@@ -4783,7 +4783,7 @@ export const questionBank = [
       D: "重复性"
     },
     answer: "C",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 369,
@@ -4796,7 +4796,7 @@ export const questionBank = [
       D: "垂直拐角"
     },
     answer: "B",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 370,
@@ -4809,7 +4809,7 @@ export const questionBank = [
       D: "五次"
     },
     answer: "B",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 371,
@@ -4822,7 +4822,7 @@ export const questionBank = [
       D: "最大单轴速度"
     },
     answer: "D",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 372,
@@ -4835,7 +4835,7 @@ export const questionBank = [
       D: "最佳工作速度"
     },
     answer: "A",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 373,
@@ -4848,7 +4848,7 @@ export const questionBank = [
       D: "最佳工作速度"
     },
     answer: "C",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 374,
@@ -4861,7 +4861,7 @@ export const questionBank = [
       D: "基座"
     },
     answer: "B",
-    category: "机械结构"
+    category: "硬件与IO控制"
   },
   {
     id: 375,
@@ -4874,7 +4874,7 @@ export const questionBank = [
       D: "基座"
     },
     answer: "A",
-    category: "机械结构"
+    category: "硬件与IO控制"
   },
   {
     id: 376,
@@ -4887,7 +4887,7 @@ export const questionBank = [
       D: "试验条件"
     },
     answer: "B",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 377,
@@ -4900,7 +4900,7 @@ export const questionBank = [
       D: "CR"
     },
     answer: "A",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 378,
@@ -4913,7 +4913,7 @@ export const questionBank = [
       D: "较小"
     },
     answer: "C",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 379,
@@ -4926,7 +4926,7 @@ export const questionBank = [
       D: "70%或10%"
     },
     answer: "A",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 380,
@@ -4939,7 +4939,7 @@ export const questionBank = [
       D: "测量停顿时间"
     },
     answer: "A",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 381,
@@ -4952,7 +4952,7 @@ export const questionBank = [
       D: "测量点位置"
     },
     answer: "C",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 382,
@@ -4965,7 +4965,7 @@ export const questionBank = [
       D: "启动时间"
     },
     answer: "D",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 383,
@@ -4978,7 +4978,7 @@ export const questionBank = [
       D: "CR"
     },
     answer: "B",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 384,
@@ -4991,7 +4991,7 @@ export const questionBank = [
       D: "CR"
     },
     answer: "D",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 385,
@@ -5004,7 +5004,7 @@ export const questionBank = [
       D: "RV"
     },
     answer: "B",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 386,
@@ -5017,7 +5017,7 @@ export const questionBank = [
       D: "位姿编号1、2、3"
     },
     answer: "B",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 387,
@@ -5030,7 +5030,7 @@ export const questionBank = [
       D: "速度、摆频误差"
     },
     answer: "A",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 388,
@@ -5043,7 +5043,7 @@ export const questionBank = [
       D: "实例"
     },
     answer: "A",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 389,
@@ -5056,7 +5056,7 @@ export const questionBank = [
       D: "(4)(1)(5)(2)(3)"
     },
     answer: "C",
-    category: "生产工艺"
+    category: "应用技术"
   },
   {
     id: 390,
@@ -5069,7 +5069,7 @@ export const questionBank = [
       D: "伺服驱动器坏了"
     },
     answer: "A",
-    category: "故障诊断"
+    category: "维护与诊断"
   },
   {
     id: 391,
@@ -5082,7 +5082,7 @@ export const questionBank = [
       D: "程序运行范围"
     },
     answer: "A",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 392,
@@ -5095,7 +5095,7 @@ export const questionBank = [
       D: "在自动化生产红线内作业"
     },
     answer: "C",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 393,
@@ -5108,7 +5108,7 @@ export const questionBank = [
       D: "氧气瓶放置焊接区域"
     },
     answer: "A",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 394,
@@ -5121,7 +5121,7 @@ export const questionBank = [
       D: "逐级上报"
     },
     answer: "A",
-    category: "安全法规"
+    category: "基础知识与安全"
   },
   {
     id: 395,
@@ -5134,7 +5134,7 @@ export const questionBank = [
       D: "香港、澳门特别行政区的安全生产工作不属于其调整范围"
     },
     answer: "A",
-    category: "安全法规"
+    category: "基础知识与安全"
   },
   {
     id: 396,
@@ -5147,7 +5147,7 @@ export const questionBank = [
       D: "禁止"
     },
     answer: "A",
-    category: "安全法规"
+    category: "基础知识与安全"
   },
   {
     id: 397,
@@ -5160,7 +5160,7 @@ export const questionBank = [
       D: "安全资格考核"
     },
     answer: "A",
-    category: "安全法规"
+    category: "基础知识与安全"
   },
   {
     id: 398,
@@ -5173,7 +5173,7 @@ export const questionBank = [
       D: "应当"
     },
     answer: "D",
-    category: "安全法规"
+    category: "基础知识与安全"
   },
   {
     id: 399,
@@ -5186,7 +5186,7 @@ export const questionBank = [
       D: "环境管理"
     },
     answer: "D",
-    category: "标准规范"
+    category: "通信与集成"
   },
   {
     id: 400,
@@ -5199,7 +5199,7 @@ export const questionBank = [
       D: "硬环境和软环境"
     },
     answer: "D",
-    category: "职业素养"
+    category: "基础知识与安全"
   },
   {
     id: 401,
@@ -5212,7 +5212,7 @@ export const questionBank = [
       D: "非专业能力或技能"
     },
     answer: "C",
-    category: "职业素养"
+    category: "基础知识与安全"
   },
   {
     id: 402,
@@ -5225,7 +5225,7 @@ export const questionBank = [
       D: "示教最高速度50%来运行"
     },
     answer: "B",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 403,
@@ -5238,7 +5238,7 @@ export const questionBank = [
       D: "1600mm/s"
     },
     answer: "B",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 404,
@@ -5251,7 +5251,7 @@ export const questionBank = [
       D: "手动T2操作"
     },
     answer: "A",
-    category: "操作模式"
+    category: "系统配置与操作"
   },
   {
     id: 405,
@@ -5264,7 +5264,7 @@ export const questionBank = [
       D: "白、蓝、棕、黄"
     },
     answer: "B",
-    category: "安全标准"
+    category: "基础知识与安全"
   },
   {
     id: 406,
@@ -5277,7 +5277,7 @@ export const questionBank = [
       D: "保障利益"
     },
     answer: "D",
-    category: "安全培训"
+    category: "基础知识与安全"
   },
   {
     id: 407,
@@ -5290,7 +5290,7 @@ export const questionBank = [
       D: "绿色：安全状态"
     },
     answer: "B",
-    category: "安全标准"
+    category: "基础知识与安全"
   },
   {
     id: 408,
@@ -5303,7 +5303,7 @@ export const questionBank = [
       D: "摆放工件，速度设置为中速"
     },
     answer: "A",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 409,
@@ -5316,7 +5316,7 @@ export const questionBank = [
       D: "机器人是否精度高"
     },
     answer: "C",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 410,
@@ -5329,7 +5329,7 @@ export const questionBank = [
       D: "带手套进行操作示教盒"
     },
     answer: "B",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 411,
@@ -5342,7 +5342,7 @@ export const questionBank = [
       D: "危险的，涉及到人身和财产安全。立即阻止"
     },
     answer: "D",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 412,
@@ -5355,7 +5355,7 @@ export const questionBank = [
       D: "工业机器人动作期间，在确保安全的范围内，也不可以穿过其工作区间"
     },
     answer: "D",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 413,
@@ -5368,7 +5368,7 @@ export const questionBank = [
       D: "利益为主"
     },
     answer: "A",
-    category: "消防安全"
+    category: "基础知识与安全"
   },
   {
     id: 414,
@@ -5381,7 +5381,7 @@ export const questionBank = [
       D: "不被他人伤害"
     },
     answer: "C",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 415,
@@ -5394,7 +5394,7 @@ export const questionBank = [
       D: "忠于你的职业"
     },
     answer: "B",
-    category: "职业素养"
+    category: "基础知识与安全"
   },
   {
     id: 416,
@@ -5407,7 +5407,7 @@ export const questionBank = [
       D: "重要又紧急"
     },
     answer: "D",
-    category: "职业素养"
+    category: "基础知识与安全"
   },
   {
     id: 417,
@@ -5420,7 +5420,7 @@ export const questionBank = [
       D: "对自己的业务，主动提出改善计划。"
     },
     answer: "A",
-    category: "职业素养"
+    category: "基础知识与安全"
   },
   {
     id: 418,
@@ -5433,7 +5433,7 @@ export const questionBank = [
       D: "投入20%精力做另外80%的工作"
     },
     answer: "A",
-    category: "职业素养"
+    category: "基础知识与安全"
   },
   {
     id: 419,
@@ -5446,7 +5446,7 @@ export const questionBank = [
       D: "客户"
     },
     answer: "A",
-    category: "职业素养"
+    category: "基础知识与安全"
   },
   {
     id: 420,
@@ -5459,7 +5459,7 @@ export const questionBank = [
       D: "人人为我，我为人人"
     },
     answer: "D",
-    category: "职业素养"
+    category: "基础知识与安全"
   },
   {
     id: 421,
@@ -5472,7 +5472,7 @@ export const questionBank = [
       D: "立即停止机器人相关外围设备，防止意外情况发生"
     },
     answer: "B",
-    category: "故障处理"
+    category: "维护与诊断"
   },
   {
     id: 422,
@@ -5485,7 +5485,7 @@ export const questionBank = [
       D: "随意更改机器人参数"
     },
     answer: "A",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 423,
@@ -5498,7 +5498,7 @@ export const questionBank = [
       D: "无所谓"
     },
     answer: "B",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 424,
@@ -5511,7 +5511,7 @@ export const questionBank = [
       D: "不用设置躲避场所，以防万一"
     },
     answer: "B",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 425,
@@ -5524,7 +5524,7 @@ export const questionBank = [
       D: "①②③④"
     },
     answer: "D",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 426,
@@ -5537,7 +5537,7 @@ export const questionBank = [
       D: "①③④"
     },
     answer: "A",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 427,
@@ -5550,7 +5550,7 @@ export const questionBank = [
       D: "激发人的灵感，遏制冲动和情感"
     },
     answer: "C",
-    category: "职业素养"
+    category: "基础知识与安全"
   },
   {
     id: 428,
@@ -5563,7 +5563,7 @@ export const questionBank = [
       D: "车间抓得紧，安全员具体检查落实"
     },
     answer: "A",
-    category: "安全生产"
+    category: "基础知识与安全"
   },
   {
     id: 429,
@@ -5576,7 +5576,7 @@ export const questionBank = [
       D: "以管理为主"
     },
     answer: "B",
-    category: "安全文化"
+    category: "基础知识与安全"
   },
   {
     id: 430,
@@ -5589,7 +5589,7 @@ export const questionBank = [
       D: "36V"
     },
     answer: "D",
-    category: "电气安全"
+    category: "基础知识与安全"
   },
   {
     id: 431,
@@ -5602,7 +5602,7 @@ export const questionBank = [
       D: "①②③"
     },
     answer: "A",
-    category: "现场管理"
+    category: "基础知识与安全"
   },
   {
     id: 432,
@@ -5615,7 +5615,7 @@ export const questionBank = [
       D: "有法可依"
     },
     answer: "B",
-    category: "职业素养"
+    category: "基础知识与安全"
   },
   {
     id: 433,
@@ -5628,7 +5628,7 @@ export const questionBank = [
       D: "90%"
     },
     answer: "A",
-    category: "质量管理"
+    category: "基础知识与安全"
   },
   {
     id: 434,
@@ -5641,7 +5641,7 @@ export const questionBank = [
       D: "工、卡、量具要放在指定地点"
     },
     answer: "A",
-    category: "设备管理"
+    category: "维护与诊断"
   },
   {
     id: 435,
@@ -5654,7 +5654,7 @@ export const questionBank = [
       D: "不同行业安全操作规程的具体内容是不同的"
     },
     answer: "B",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 436,
@@ -5667,7 +5667,7 @@ export const questionBank = [
       D: "动态响应和静态响应"
     },
     answer: "A",
-    category: "机器人类型"
+    category: "通信与集成"
   },
   {
     id: 437,
@@ -5680,7 +5680,7 @@ export const questionBank = [
       D: "闭环、定位"
     },
     answer: "A",
-    category: "控制技术"
+    category: "通信与集成"
   },
   {
     id: 438,
@@ -5693,7 +5693,7 @@ export const questionBank = [
       D: "精密装配"
     },
     answer: "D",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 439,
@@ -5706,7 +5706,7 @@ export const questionBank = [
       D: "指力传感器"
     },
     answer: "A",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 440,
@@ -5719,7 +5719,7 @@ export const questionBank = [
       D: "从操作空间到任务空间的变换"
     },
     answer: "C",
-    category: "运动学"
+    category: "坐标系与运动控制"
   },
   {
     id: 441,
@@ -5732,7 +5732,7 @@ export const questionBank = [
       D: "连杆机构的挠性"
     },
     answer: "C",
-    category: "精度控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 442,
@@ -5745,7 +5745,7 @@ export const questionBank = [
       D: "工具"
     },
     answer: "D",
-    category: "轨迹规划"
+    category: "坐标系与运动控制"
   },
   {
     id: 443,
@@ -5758,7 +5758,7 @@ export const questionBank = [
       D: "扭转角"
     },
     answer: "A",
-    category: "运动学"
+    category: "坐标系与运动控制"
   },
   {
     id: 444,
@@ -5771,7 +5771,7 @@ export const questionBank = [
       D: "J4轴"
     },
     answer: "D",
-    category: "传动系统"
+    category: "硬件与IO控制"
   },
   {
     id: 445,
@@ -5784,7 +5784,7 @@ export const questionBank = [
       D: "J6轴"
     },
     answer: "A",
-    category: "传动系统"
+    category: "硬件与IO控制"
   },
   {
     id: 446,
@@ -5797,7 +5797,7 @@ export const questionBank = [
       D: "①②③④"
     },
     answer: "D",
-    category: "机器人类型"
+    category: "通信与集成"
   },
   {
     id: 447,
@@ -5810,7 +5810,7 @@ export const questionBank = [
       D: "承载能力"
     },
     answer: "D",
-    category: "技术参数"
+    category: "硬件与IO控制"
   },
   {
     id: 448,
@@ -5823,7 +5823,7 @@ export const questionBank = [
       D: "重复定位精度"
     },
     answer: "A",
-    category: "技术参数"
+    category: "硬件与IO控制"
   },
   {
     id: 449,
@@ -5836,7 +5836,7 @@ export const questionBank = [
       D: "机器人本体上"
     },
     answer: "D",
-    category: "安全系统"
+    category: "基础知识与安全"
   },
   {
     id: 450,
@@ -5849,7 +5849,7 @@ export const questionBank = [
       D: "检测环节"
     },
     answer: "D",
-    category: "控制系统"
+    category: "通信与集成"
   },
   {
     id: 451,
@@ -5862,7 +5862,7 @@ export const questionBank = [
       D: "指力传感器"
     },
     answer: "A",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 452,
@@ -5875,7 +5875,7 @@ export const questionBank = [
       D: "转动惯量小且转矩系数小"
     },
     answer: "C",
-    category: "驱动系统"
+    category: "硬件与IO控制"
   },
   {
     id: 453,
@@ -5888,7 +5888,7 @@ export const questionBank = [
       D: "25"
     },
     answer: "D",
-    category: "精度控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 454,
@@ -5901,7 +5901,7 @@ export const questionBank = [
       D: "开放性差"
     },
     answer: "D",
-    category: "控制系统"
+    category: "通信与集成"
   },
   {
     id: 455,
@@ -5914,7 +5914,7 @@ export const questionBank = [
       D: "重复定位精度"
     },
     answer: "C",
-    category: "技术参数"
+    category: "硬件与IO控制"
   },
   {
     id: 456,
@@ -5927,7 +5927,7 @@ export const questionBank = [
       D: "欧洲"
     },
     answer: "A",
-    category: "行业发展"
+    category: "通信与集成"
   },
   {
     id: 457,
@@ -5940,7 +5940,7 @@ export const questionBank = [
       D: "光电传感器"
     },
     answer: "D",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 458,
@@ -5953,7 +5953,7 @@ export const questionBank = [
       D: "机械系统"
     },
     answer: "B",
-    category: "系统构成"
+    category: "系统配置与操作"
   },
   {
     id: 459,
@@ -5966,7 +5966,7 @@ export const questionBank = [
       D: "重量"
     },
     answer: "D",
-    category: "技术参数"
+    category: "硬件与IO控制"
   },
   {
     id: 460,
@@ -5979,7 +5979,7 @@ export const questionBank = [
       D: "4、5、6轴"
     },
     answer: "D",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 461,
@@ -5992,7 +5992,7 @@ export const questionBank = [
       D: "4轴"
     },
     answer: "B",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 462,
@@ -6005,7 +6005,7 @@ export const questionBank = [
       D: "连杆机构的挠性"
     },
     answer: "C",
-    category: "精度控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 463,
@@ -6018,7 +6018,7 @@ export const questionBank = [
       D: "动力学逆问题"
     },
     answer: "B",
-    category: "运动控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 464,
@@ -6031,7 +6031,7 @@ export const questionBank = [
       D: "决定机器人手部位姿的各个关节"
     },
     answer: "D",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 465,
@@ -6044,7 +6044,7 @@ export const questionBank = [
       D: "②③"
     },
     answer: "A",
-    category: "传动系统"
+    category: "硬件与IO控制"
   },
   {
     id: 466,
@@ -6057,7 +6057,7 @@ export const questionBank = [
       D: "C：以圆弧插补方式移动到示教位置"
     },
     answer: "A",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 467,
@@ -6070,7 +6070,7 @@ export const questionBank = [
       D: "①④"
     },
     answer: "D",
-    category: "控制技术"
+    category: "通信与集成"
   },
   {
     id: 468,
@@ -6083,7 +6083,7 @@ export const questionBank = [
       D: "R轴"
     },
     answer: "C",
-    category: "力控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 469,
@@ -6096,7 +6096,7 @@ export const questionBank = [
       D: "光电码盘"
     },
     answer: "C",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 470,
@@ -6109,917 +6109,917 @@ export const questionBank = [
       D: "持续的"
     },
     answer: "D",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 471,
     type: "true_false",
     question: "在自动运行模式下，可连续运行也可单步运行。",
     answer: "false",
-    category: "操作模式"
+    category: "系统配置与操作"
   },
   {
     id: 472,
     type: "true_false",
     question: "机器人只有在零点校准之后方可进行笛卡尔运动，并且要将机器人移置安全位置。",
     answer: "true",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 473,
     type: "true_false",
     question: "'关节到点'与'直线到点'适用关节和笛卡尔坐标。",
     answer: "false",
-    category: "运动控制"
+    category: "坐标系与运动控制"
   },
   {
     id: 474,
     type: "true_false",
     question: "工业机器人传感部分用于感知内部和外部的信息。",
     answer: "true",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 475,
     type: "true_false",
     question: "华数工业机器人数字量输入输出信号配置完成后无需重启系统就可以使用。",
     answer: "true",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 476,
     type: "true_false",
     question: "华数工业机器人数字量输出信号可在示教器中进行监控和强置。",
     answer: "true",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 477,
     type: "true_false",
     question: "配置外部信号是将系统信号与IO信号输入输出索引建立映射关系的过程。",
     answer: "true",
-    category: "IO控制"
+    category: "硬件与IO控制"
   },
   {
     id: 478,
     type: "true_false",
     question: "InteRobot中不仅可以查看机器人腕节工作空间，也可以显示当前工具的工作空间。",
     answer: "true",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 479,
     type: "true_false",
     question: "机器人的工作空间是指机器人手臂或手部安装点所能达到的所有空间区域，以及手部本身所能到达的区域。",
     answer: "true",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 480,
     type: "true_false",
     question: "虽然机器人的结构差异很大，但所有机器人均能将一个部件移动到空间的某一点。",
     answer: "true",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 481,
     type: "true_false",
     question: "校准触摸屏是用来调整屏幕灵敏度的。",
     answer: "false",
-    category: "人机界面"
+    category: "系统配置与操作"
   },
   {
     id: 482,
     type: "true_false",
     question: "手动操作时，遇到紧急情况时，必须松开示教器使能器按钮，才能是机器人停下。",
     answer: "false",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 483,
     type: "true_false",
     question: "通过批量导入备份数据能够实现多台机器人快速生产使用。",
     answer: "false",
-    category: "数据管理"
+    category: "编程与指令"
   },
   {
     id: 484,
     type: "true_false",
     question: "机器人示教器手动操纵时，可以有多种方式实现切换。",
     answer: "true",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 485,
     type: "true_false",
     question: "在运行方式手动T1或手动T2中，确认开关必须保持在中间位置，即使能必须按下，方可使机器人运动。",
     answer: "true",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 486,
     type: "true_false",
     question: "机器人各轴校准操作时，可以单轴也可以多轴同时更新。",
     answer: "true",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 487,
     type: "true_false",
     question: "六轴机器人单轴操作时由于奇异点的存在，所以不能将四、六轴共线。",
     answer: "false",
-    category: "奇异点处理"
+    category: "坐标系与运动控制"
   },
   {
     id: 488,
     type: "true_false",
     question: "新建工具坐标系时直接修改 Tool[0] 就可以。",
     answer: "false",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 489,
     type: "true_false",
     question: "选择最小增量控制时，每步移动0.01mm",
     answer: "false",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 490,
     type: "true_false",
     question: "工业机器人在打磨不规则曲线时，可以采用描点法和图形化编程方法进行处理。",
     answer: "true",
-    category: "轨迹规划"
+    category: "坐标系与运动控制"
   },
   {
     id: 491,
     type: "true_false",
     question: "机器人焊接作业时，焊接变位机的应用只能提高生产效率，不能提高焊接质量。",
     answer: "false",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 492,
     type: "true_false",
     question: "焊接中常采用'前进法'是因为气体保护效果好。",
     answer: "true",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 493,
     type: "true_false",
     question: "在用机器人进行弧焊作业中，夹具要求回避与焊枪的干涉",
     answer: "true",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 494,
     type: "true_false",
     question: "运行焊接程序时，只要将焊接启动锁定就不会发生起弧焊接。",
     answer: "true",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 495,
     type: "true_false",
     question: "按下向前出丝按键时，焊丝将以10mm/s的速度向前出丝。",
     answer: "false",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 496,
     type: "true_false",
     question: "每按一下伸出按键，焊丝将伸出15mm。",
     answer: "true",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 497,
     type: "true_false",
     question: "机器人焊接时必须与焊机进行通讯才能保证焊接过程自动实现。",
     answer: "true",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 498,
     type: "true_false",
     question: "焊接引入工业机器人以后，一切工作都是自动进行的。",
     answer: "false",
-    category: "焊接系统"
+    category: "应用技术"
   },
   {
     id: 499,
     type: "true_false",
     question: "工业机器人的规格和外围设备的规格都是随着自动化规模的变化而变化的。",
     answer: "true",
-    category: "外围设备"
+    category: "硬件与IO控制"
   },
   {
     id: 500,
     type: "true_false",
     question: "灵活性低的工业机器人，其外围设备较为复杂。",
     answer: "true",
-    category: "外围设备"
+    category: "硬件与IO控制"
   },
   {
     id: 501,
     type: "true_false",
     question: "用传感器采集环境信息是机器人智能化的第一步。",
     answer: "true",
-    category: "智能控制"
+    category: "通信与集成"
   },
   {
     id: 502,
     type: "true_false",
     question: "工业机器人外围设备是指可以附加在机器人系统中加强机器人功能的设备。",
     answer: "true",
-    category: "外围设备"
+    category: "硬件与IO控制"
   },
   {
     id: 503,
     type: "true_false",
     question: "喷漆机器人属于非接触式作业机器人。",
     answer: "true",
-    category: "机器人类型"
+    category: "通信与集成"
   },
   {
     id: 504,
     type: "true_false",
     question: "IF...CALL子程序，当条件成立时，则执行子程序.PRG内容后再顺利往下执行。",
     answer: "true",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 505,
     type: "true_false",
     question: "GOTO 指令和 LBL 指令结合使用完成程序的跳转。",
     answer: "true",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 506,
     type: "true_false",
     question: "可采用三点法完成工业机器人工具坐标系的标定。",
     answer: "false",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 507,
     type: "true_false",
     question: "传感器的敏感元件的基本功能是将某种不易测量的物理量转换为易于测量的物理量。",
     answer: "true",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 508,
     type: "true_false",
     question: "超声波式传感器属于接近觉传感器。",
     answer: "true",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 509,
     type: "true_false",
     question: "1200PLC 模拟量输入模块地址范围可以在组态时任意指定。",
     answer: "true",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 510,
     type: "true_false",
     question: "传感器的灵敏度是指传感器的输出信号达到稳定时，输入信号变化与输出信号变化的比值。",
     answer: "false",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 511,
     type: "true_false",
     question: "位置传感器主要采用光电式增码盘。",
     answer: "true",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 512,
     type: "true_false",
     question: "接近觉是指机器人手接近对象物体的距离几米远时，就能检测出对象物体表面的距离、斜度和表面状态的传感器。",
     answer: "false",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 513,
     type: "true_false",
     question: "光电编码器及测速发电机，是两种广泛采用的角速度传感器。",
     answer: "false",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 514,
     type: "true_false",
     question: "PLC与机器人IPC之间的通信时，PLC属于MODBUS的客户端。",
     answer: "true",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 515,
     type: "true_false",
     question: "MODBUS TCP通信协议是基于PROFINET总线的一种网络通信协议。",
     answer: "true",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 516,
     type: "true_false",
     question: "采用数组的功能进行数据传输时，传输的数据类型必须为整数。",
     answer: "true",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 517,
     type: "true_false",
     question: "数组处理数据的结果是将PLC传输的十进制数转化为二进制，并保存至R寄存器中。",
     answer: "false",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 518,
     type: "true_false",
     question: "当采用数组进行信号交互，通过配置外部运行配置，可以共同使用同一物理端口进行状态映射。",
     answer: "false",
-    category: "通信技术"
+    category: "通信与集成"
   },
   {
     id: 519,
     type: "true_false",
     question: "PLC的元件是软元件，其触点可无限次使用。",
     answer: "true",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 520,
     type: "true_false",
     question: "可编程控制器的工作方式是采用一个不断循环的扫描工作方式。",
     answer: "true",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 521,
     type: "true_false",
     question: "华数3型系统中，若要实现跳转程序段，可以采用单独LBL指令。",
     answer: "false",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 522,
     type: "true_false",
     question: "在3型系统中，标签指令是属于事件指令。",
     answer: "false",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 523,
     type: "true_false",
     question: "重复执行判断指令是FOR。",
     answer: "true",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 524,
     type: "true_false",
     question: "当电源失电时，定时器与计数器均复位。",
     answer: "false",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 525,
     type: "true_false",
     question: "中断指令编写在PROGRAM指令的下方时，程序运行指针无法周期内扫描事件指令。",
     answer: "false",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 526,
     type: "true_false",
     question: "华数3型系统中，子程序嵌套可以无限层",
     answer: "false",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 527,
     type: "true_false",
     question: "两个或两个以上的线圈可以串联输出。",
     answer: "false",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 528,
     type: "true_false",
     question: "WaitUntil等待一个条件满足后，程序继续往下执行。",
     answer: "true",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 529,
     type: "true_false",
     question: "变量用const定义。",
     answer: "false",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 530,
     type: "true_false",
     question: "工件坐标系：它定义工件相对于大地坐标系的位置。",
     answer: "true",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 531,
     type: "true_false",
     question: "工业机器人的负载承受闸值在空间中不同位置，其数值各不相同。",
     answer: "true",
-    category: "技术参数"
+    category: "硬件与IO控制"
   },
   {
     id: 532,
     type: "true_false",
     question: "任何复杂的运动都可以分解为由多个平移和绕轴转动的简单运动的合成。",
     answer: "true",
-    category: "运动学"
+    category: "坐标系与运动控制"
   },
   {
     id: 533,
     type: "true_false",
     question: "华数Ⅱ型系统中运动指令和非运行指令之间必须加DELAY。",
     answer: "true",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 534,
     type: "true_false",
     question: "WAIT指令用于等待IO信号，超过设定时限后退出等待。",
     answer: "false",
-    category: "编程基础"
+    category: "编程与指令"
   },
   {
     id: 535,
     type: "true_false",
     question: "在PLC选型时，若负载要求响应速度快，负载电流小，宜选用晶体管输出型。",
     answer: "true",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 536,
     type: "true_false",
     question: "使用博途软件编制PLC程序的语言最常用的是梯形图。",
     answer: "true",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 537,
     type: "true_false",
     question: "与超声传感器相比，红外测距的准确度更高。",
     answer: "false",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 538,
     type: "true_false",
     question: "视觉获得的感知信息占人对外界感知信息的60%",
     answer: "false",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 539,
     type: "true_false",
     question: "视觉传感器是将景物的光信号转换成电信号的器件。",
     answer: "true",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 540,
     type: "true_false",
     question: "图像输入部分通常由CCD固体摄像机、镜头和胶卷组成。",
     answer: "false",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 541,
     type: "true_false",
     question: "多感觉信息融合技术在智能机器人系统中的应用，则提高了机器人的认知水平。",
     answer: "true",
-    category: "智能控制"
+    category: "通信与集成"
   },
   {
     id: 542,
     type: "true_false",
     question: "图像增强是调整图像的色度、亮度、饱和度、对比度和分辨率，使得图像效果清晰和颜色分明。",
     answer: "true",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 543,
     type: "true_false",
     question: "图像二值化处理便是将图像中感兴趣的部分置1，背景部分置2。",
     answer: "false",
-    category: "视觉系统"
+    category: "应用技术"
   },
   {
     id: 544,
     type: "true_false",
     question: "RFID是Radio Frequency Identification 的缩写，即无线射频识别。",
     answer: "true",
-    category: "RFID技术"
+    category: "硬件与IO控制"
   },
   {
     id: 545,
     type: "true_false",
     question: "RFID拥有耐环境性，穿透性，形状容易小型化和多样化等特性。",
     answer: "true",
-    category: "RFID技术"
+    category: "硬件与IO控制"
   },
   {
     id: 546,
     type: "true_false",
     question: "仓储模块含4层*3个存储位，下面两层配置有共6个工件检测传感器，与PLC控制器通过modbus TCP进行信号交互。",
     answer: "true",
-    category: "仓储系统"
+    category: "应用技术"
   },
   {
     id: 547,
     type: "true_false",
     question: "博途软件是一个高度集成的软件，所以在HMI中建立的数据类型和PLC中数据类型的长度相同，就可以在HMI中使用。",
     answer: "false",
-    category: "人机界面"
+    category: "系统配置与操作"
   },
   {
     id: 548,
     type: "true_false",
     question: "机器人轨迹泛指工业机器人在运动过程中所走过的路径。",
     answer: "false",
-    category: "轨迹规划"
+    category: "坐标系与运动控制"
   },
   {
     id: 549,
     type: "true_false",
     question: "在平焊中，编写机器人焊接程序时，起弧指令必须在起弧点前设置，防止滞后起弧。",
     answer: "false",
-    category: "焊接编程"
+    category: "编程与指令"
   },
   {
     id: 550,
     type: "true_false",
     question: "采用立焊进行坡口的填充时，机器人的轨迹编程应该从下向上进行运动。",
     answer: "true",
-    category: "焊接编程"
+    category: "编程与指令"
   },
   {
     id: 551,
     type: "true_false",
     question: "在调用焊接通道时，可以在编写程序界面中对通道的参数进行直接修改。",
     answer: "true",
-    category: "焊接编程"
+    category: "编程与指令"
   },
   {
     id: 552,
     type: "true_false",
     question: "起弧后，设置等待时间为0.1S，可以运用如此指令WAIT100，起到起弧加热的效果。",
     answer: "false",
-    category: "焊接编程"
+    category: "编程与指令"
   },
   {
     id: 553,
     type: "true_false",
     question: "轨迹规划与控制就是按时间规划和控制手部或工具中心走过的空间路径。",
     answer: "true",
-    category: "轨迹规划"
+    category: "坐标系与运动控制"
   },
   {
     id: 554,
     type: "true_false",
     question: "轨迹插补运算是伴随着轨迹控制过程一步步完成的，而不是在得到示教点之后，一次完成，再提交给再现过程的。",
     answer: "true",
-    category: "轨迹规划"
+    category: "坐标系与运动控制"
   },
   {
     id: 555,
     type: "true_false",
     question: "在S7-1200PLC中TON的启动输入端IN由'1'变'0'时定时器复位。",
     answer: "true",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 556,
     type: "true_false",
     question: "在S7-1200PLC中PTO为高速脉冲串输出，它总是输出占空比为50%的方波脉冲。",
     answer: "true",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 557,
     type: "true_false",
     question: "输入映象寄存器1用于存放CPU执行程序的结果。",
     answer: "false",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 558,
     type: "true_false",
     question: "在S7-1200PLC中，通过工厂复位，可以将S7-1200CPU中存储的程序清除，也可以同时清除 CPU 所使用的 IP 地址。",
     answer: "true",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 559,
     type: "true_false",
     question: "在 S7-1200 PLC 中，TONR 的启动输入端 IN 由'1'变'0'时定时器复位。",
     answer: "false",
-    category: "PLC控制"
+    category: "硬件与IO控制"
   },
   {
     id: 560,
     type: "true_false",
     question: "InteRobot 只支持用户导入华数品牌的机器人模型。",
     answer: "false",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 561,
     type: "true_false",
     question: "在 InteRobot 中，工作站导航树是以工作站作为根节点，下有三个子节点，包括机器人组、工件坐标系组和工序组。",
     answer: "true",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 562,
     type: "true_false",
     question: "在 InteRobot 中，变位机属性栏主要作用是对变位机进行仿真控制，控制变位机的姿态，让变位机运动到用户指定的位置上。",
     answer: "true",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 563,
     type: "true_false",
     question: "在 InteRobot 中，导出的工具文件后缀名为.incRob 文件。",
     answer: "false",
-    category: "离线编程"
+    category: "编程与指令"
   },
   {
     id: 564,
     type: "true_false",
     question: "完成某一特定作业时有多余自由度的，称为冗余自由度机器人。",
     answer: "true",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 565,
     type: "true_false",
     question: "机器人出厂时默认的工具坐标系原点位于第 1 轴中心。",
     answer: "false",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 566,
     type: "true_false",
     question: "机器人常用驱动方式主要是液压驱动、气压驱动和电气驱动三种基本类型。",
     answer: "true",
-    category: "驱动系统"
+    category: "硬件与IO控制"
   },
   {
     id: 567,
     type: "true_false",
     question: "工业机器人是面向工业领域的多关节机械手或多自由度的机器装置，它能自动执行工作，是靠自身动力和控制能力来实现各种功能的一种机器。",
     answer: "true",
-    category: "基础知识"
+    category: "基础知识与安全"
   },
   {
     id: 568,
     type: "true_false",
     question: "工业机器人由主体、驱动系统、控制系统和操作系统四个基本部分组成。",
     answer: "false",
-    category: "系统构成"
+    category: "系统配置与操作"
   },
   {
     id: 569,
     type: "true_false",
     question: "对机器人进行示教时，模式旋钮打到示教模式后，在此模式中，外部设备发出的启动信号无效。",
     answer: "true",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 570,
     type: "true_false",
     question: "承载能力是指机器人在工作范围内的任何位姿上所能承受的最大质量。",
     answer: "true",
-    category: "技术参数"
+    category: "硬件与IO控制"
   },
   {
     id: 571,
     type: "true_false",
     question: "工业机器人系统由四大部分组成：机械系统、驱动系统、控制系统和感知系统。",
     answer: "true",
-    category: "系统构成"
+    category: "系统配置与操作"
   },
   {
     id: 572,
     type: "true_false",
     question: "在切割、涂胶、焊接等虚拟工作站中，常会需要处理一些不规则的曲线，通过描点法可以根据3D模型的曲线特征自动转换成机器人的运行轨迹。",
     answer: "false",
-    category: "轨迹规划"
+    category: "坐标系与运动控制"
   },
   {
     id: 573,
     type: "true_false",
     question: "TCP点又称工具中心点，是为了保证机器人程序和位置的重复执行而引入的。",
     answer: "true",
-    category: "坐标系统"
+    category: "坐标系与运动控制"
   },
   {
     id: 574,
     type: "true_false",
     question: "在机器人运行过程中，我们可以监控TCP的运动轨迹以及运动速度，以便进行性能分析。",
     answer: "true",
-    category: "性能分析"
+    category: "维护与诊断"
   },
   {
     id: 575,
     type: "true_false",
     question: "目前机器人中较为常用的是旋转型光电式编码器。",
     answer: "true",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 576,
     type: "true_false",
     question: "进行工作站机器人系统安装施工时，按照设计布局图，先将机器人整机固定于预定位置后，即可通电调试，安全防护措施及其他传输设备的安装可同步进行。",
     answer: "false",
-    category: "系统安装"
+    category: "系统配置与操作"
   },
   {
     id: 577,
     type: "true_false",
     question: "定期对机器人保养可以延长机器人的使用寿命。",
     answer: "true",
-    category: "维护保养"
+    category: "维护与诊断"
   },
   {
     id: 578,
     type: "true_false",
     question: "工业机器人进行零点标定时，并不需要对每一个轴标定零点。",
     answer: "false",
-    category: "校准标定"
+    category: "系统配置与操作"
   },
   {
     id: 579,
     type: "true_false",
     question: "工业机器人的最大工作速度通常是指机器人手臂末端的最大速度。",
     answer: "true",
-    category: "技术参数"
+    category: "硬件与IO控制"
   },
   {
     id: 580,
     type: "true_false",
     question: "机器人轨迹泛指工业机器人在运动过程中的运动轨迹，即运动点的位移、速度和加速度。",
     answer: "true",
-    category: "轨迹规划"
+    category: "坐标系与运动控制"
   },
   {
     id: 581,
     type: "true_false",
     question: "机器人上常用的可以测量转速的传感器有测度发电机和增量式码盘。",
     answer: "true",
-    category: "传感器技术"
+    category: "硬件与IO控制"
   },
   {
     id: 582,
     type: "true_false",
     question: "所有试验报告应包含每一种试验所用的机器人程序与软件参数。",
     answer: "true",
-    category: "性能测试"
+    category: "维护与诊断"
   },
   {
     id: 583,
     type: "true_false",
     question: "设计工业机器人应用系统时，在识别危险后需评估其与机器人系统相关的风险，可通过机器人系统设计、机器人系统替代、设计安全防护措施、编写使用资料并组织培训等措施有效降低风险。",
     answer: "true",
-    category: "安全设计"
+    category: "基础知识与安全"
   },
   {
     id: 584,
     type: "true_false",
     question: "在机器人的自动操作期间，允许人员进入其工作区域。",
     answer: "false",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 585,
     type: "true_false",
     question: "机器人调试人员进入机器人工作区域范围内时需佩戴安全帽。",
     answer: "true",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 586,
     type: "true_false",
     question: "机器人调试人员操作机器人示教器时不许带手套。",
     answer: "true",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 587,
     type: "true_false",
     question: "为了确保安全，用示教编程器手动运行机器人时，机器人的最高速度限制为50mm/s。",
     answer: "true",
-    category: "安全操作"
+    category: "基础知识与安全"
   },
   {
     id: 588,
     type: "true_false",
     question: "棉安全帽必须有耳孔，不影响听觉。",
     answer: "true",
-    category: "安全防护"
+    category: "基础知识与安全"
   },
   {
     id: 589,
     type: "true_false",
     question: "从业人员应接受安全生产教育和培训，掌握本职工作所需的相关知识，提高安全生产。",
     answer: "true",
-    category: "安全培训"
+    category: "基础知识与安全"
   },
   {
     id: 590,
     type: "true_false",
     question: "使用灭火器灭火时应站在上风口，对准火源根部进行喷射。",
     answer: "true",
-    category: "消防安全"
+    category: "基础知识与安全"
   },
   {
     id: 591,
     type: "true_false",
     question: "施工机械和设备要保持性能完好，有符合要求的安全防护装置。",
     answer: "true",
-    category: "设备安全"
+    category: "基础知识与安全"
   },
   {
     id: 592,
     type: "true_false",
     question: "因为人体电阻为800Ω，所以36V工频电压能绝对保证人身安全。",
     answer: "false",
-    category: "电气安全"
+    category: "基础知识与安全"
   },
   {
     id: 593,
     type: "true_false",
     question: "职业作为社会关系的一个重要方面，对社会成员的精神生活和精神传统产生着重大影响。",
     answer: "true",
-    category: "职业素养"
+    category: "基础知识与安全"
   },
   {
     id: 594,
     type: "true_false",
     question: "从业者从事职业的态度是价值观、道德观的具体表现",
     answer: "true",
-    category: "职业素养"
+    category: "基础知识与安全"
   },
   {
     id: 595,
     type: "true_false",
     question: "生产经营规模较小，可以不建立应急救援组织的，应当指定兼职的应急救援人员。",
     answer: "true",
-    category: "应急管理"
+    category: "基础知识与安全"
   },
   {
     id: 596,
     type: "true_false",
     question: "C指令为圆弧指令，机器人示教圆弧的当前位置与选择的三个点形成一个圆弧。",
     answer: "false",
-    category: "运动指令"
+    category: "编程与指令"
   },
   {
     id: 597,
     type: "true_false",
     question: "机器人单轴运动时，不需要一直按着示教器使能键。",
     answer: "false",
-    category: "示教操作"
+    category: "系统配置与操作"
   },
   {
     id: 598,
     type: "true_false",
     question: "柱坐标机器人一般旋转允许旋转360°",
     answer: "false",
-    category: "机器人类型"
+    category: "通信与集成"
   },
   {
     id: 599,
     type: "true_false",
     question: "在大多数伺服电动机的控制回路中，都采用了电压控制方式。",
     answer: "false",
-    category: "控制系统"
+    category: "通信与集成"
   },
   {
     id: 600,
     type: "true_false",
     question: "参数IP54表示工业机器人的重复定位精度。",
     answer: "false",
-    category: "技术参数"
+    category: "硬件与IO控制"
   }
 ];
 
