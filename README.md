@@ -1,27 +1,27 @@
-# Quiz App Backup 📚
+# 智能学习题库系统 📚
 
-一个功能全面的 React TypeScript 题库学习应用，支持多种题型、暗黑模式、进度跟踪等特性。
+一个基于React + TypeScript开发的现代化题库学习应用，采用多邻国式的舒适配色和交互设计，提供沉浸式的学习体验。
 
-## ✨ 主要功能
+## ✨ 核心特性
 
-### 🎯 核心功能
-- **多题库支持**: 内置增材制造、机器人编程等多个专业题库（共23个题库）
-- **多种题型**: 支持单选、多选、判断、填空、简答题
-- **智能学习**: 错题回顾、收藏题目、学习计划
-- **进度跟踪**: 答题统计、正确率分析、学习连击
-- **个性化**: 暗黑/浅色模式切换、自定义设置
+### 🎯 智能学习系统
+- **23个专业题库**: 涵盖增材制造、机器人编程等工程技术领域
+- **5种题型支持**: 单选、多选、判断、填空、简答题，完全支持图片题目
+- **智能推荐**: 错题回顾、收藏复习、自适应学习路径
+- **进度追踪**: 详细学习分析、正确率统计、连击记录
+- **个性化体验**: 暗黑/浅色主题、声音反馈、全屏专注模式
 
-### 📊 学习管理
-- **题库管理**: 导入/导出题库、自定义题库创建
-- **学习分析**: 详细的答题统计和学习报告
-- **收藏系统**: 重要题目收藏和快速复习
-- **错题本**: 自动收集错题，针对性练习
+### 📊 学习分析平台
+- **可视化图表**: 内置Charts组件，直观展示学习数据
+- **学习分析面板**: LearningAnalytics组件提供深度学习洞察
+- **多维度统计**: 答题正确率、时间分布、知识点掌握度
+- **学习报告**: 自动生成详细的学习报告和建议
 
-### 🎨 用户体验
-- **响应式设计**: 适配桌面端和移动端
-- **流畅动画**: 丝滑的交互体验
-- **全屏模式**: 专注学习的全屏体验
-- **声音反馈**: 可选的音效反馈
+### 🛠️ 高级功能
+- **题库管理器**: 完整的题库导入/导出、编辑功能
+- **图片题目支持**: 完善的图片加载、缓存、错误处理机制
+- **自动化测试**: 内置测试框架，包含功能测试、性能测试
+- **响应式设计**: 完美适配手机、平板、桌面设备
 
 ## 🚀 快速开始
 
@@ -49,33 +49,46 @@ npm run build
 npm run preview
 ```
 
-## 📁 项目结构
+## 📁 项目架构
 
 ```
-quiz-app-backup/
-├── src/
-│   ├── App.tsx                 # 主应用组件
-│   ├── QuestionBankManager.tsx # 题库管理组件
-│   ├── main.tsx               # 应用入口
-│   ├── index.css              # 全局样式
-│   └── questionBanks/         # 题库文件夹 (23个题库)
-│       ├── additive_manufacturing_*.js      # 增材制造题库 (3个)
-│       │   ├── additive_manufacturing_basic.js
-│       │   ├── additive_manufacturing_intermediate.js
-│       │   └── additive_Manufacturing_Advanced.js
-│       └── robot-coding-*.js                # 机器人编程题库 (20个)
-│           ├── robot-coding-ABB-*.js        # ABB机器人
-│           ├── robot-coding-FNK-*.js        # 发那科机器人
-│           ├── robot-coding-HSR-*.js        # HSR机器人
-│           ├── robot-coding-KKR-*.js        # 川崎机器人
-│           └── robot-coding-[其他品牌]-*.js  # 其他品牌机器人
-├── public/
-│   └── images/
-│       └── logos/             # Logo资源文件
-├── docs/                      # 项目文档
-│   ├── 项目说明.md
-│   └── 题库规范.md
-└── package.json
+智能学习题库系统/
+├── src/                          # 源代码目录
+│   ├── App.tsx                   # 主应用组件 (1200+ 行核心逻辑)
+│   ├── QuestionBankManager.tsx   # 题库管理系统
+│   ├── main.tsx                  # 应用入口点
+│   ├── components/               # React组件库
+│   │   ├── LearningAnalytics.tsx # 学习分析面板
+│   │   ├── Charts.tsx            # 数据可视化图表
+│   │   ├── BankSwitcher.tsx      # 题库切换器
+│   │   ├── screens/              # 屏幕组件
+│   │   │   ├── HomeScreen.tsx    # 主页面
+│   │   │   ├── QuizScreen.tsx    # 答题界面
+│   │   │   ├── ResultsScreen.tsx # 结果展示
+│   │   │   └── SettingsScreen.tsx# 设置面板
+│   │   └── ui/                   # UI基础组件
+│   │       ├── Button.tsx        # 按钮组件
+│   │       ├── Card.tsx          # 卡片组件
+│   │       └── ErrorBoundary.tsx # 错误边界
+│   ├── hooks/                    # 自定义React Hooks
+│   │   ├── useQuizState.ts       # 答题状态管理
+│   │   ├── useSettings.ts        # 设置管理
+│   │   └── useSoundSystem.ts     # 音效系统
+│   ├── utils/                    # 工具函数库
+│   │   ├── imageUtils.ts         # 图片处理工具
+│   │   └── questionUtils.ts      # 题目处理工具
+│   ├── constants/                # 常量定义
+│   │   └── theme.ts              # 主题配置
+│   └── questionBanks/            # 题库数据 (23个专业题库)
+│       ├── additive_manufacturing_*.js  # 增材制造 (3个)
+│       └── robot-coding-*.js             # 机器人编程 (20个)
+├── public/                       # 静态资源
+│   └── images/                   # 图片资源库
+├── test-results/                 # 自动化测试结果
+├── docs/                         # 项目文档
+├── test-runner.js                # 自动化测试脚本
+├── quick-test.js                 # 快速测试脚本
+└── test-config.json              # 测试配置文件
 ```
 
 ## 📚 题库格式
@@ -278,12 +291,22 @@ export const questionBank = [
 
 ## 🛠️ 技术栈
 
-- **前端框架**: React 18 + TypeScript
-- **构建工具**: Vite
-- **样式**: Tailwind CSS
-- **图标**: Lucide React
-- **状态管理**: React Hooks
-- **数据持久化**: LocalStorage
+### 核心技术
+- **前端框架**: React 18.3.1 + TypeScript 5.5.3
+- **构建工具**: Vite 5.4.2 (超快开发体验)
+- **样式解决方案**: Tailwind CSS 3.4.1 + PostCSS + Autoprefixer
+- **图标系统**: Lucide React 0.344.0 (1000+ 图标)
+
+### 开发工具链
+- **代码质量**: ESLint 9.9.1 + TypeScript ESLint
+- **状态管理**: React Hooks + Custom Hooks架构
+- **数据持久化**: LocalStorage + 智能缓存系统
+- **测试框架**: 自研测试套件 (test-runner.js)
+
+### 自动化系统
+- **自动化测试**: 功能测试 + 性能测试 + 构建测试
+- **快速测试**: quick-test.js 提供快速验证
+- **测试报告**: 自动生成HTML + JSON格式报告
 
 ## 🎨 主题定制
 
@@ -296,18 +319,62 @@ export const questionBank = [
 - 📱 平板端 (768px+)  
 - 💻 桌面端 (1024px+)
 
-## 🔧 开发相关
+## 🔧 开发与测试
 
-### 代码规范
-- ESLint 配置用于代码质量检查
-- TypeScript 严格模式
-- 组件化开发模式
+### 自动化测试套件
+```bash
+# 完整测试套件
+npm run test
 
-### 性能优化
-- 题库懒加载
-- 图片预加载和错误处理
-- 本地存储优化
+# 快速测试 (跳过耗时测试)
+npm run test:quick
 
-## 📄 许可证
+# 详细测试报告
+npm run test:verbose
 
-除了题目有关内容外皆采用mit协议授权
+# 仅构建测试
+npm run test:build
+
+# 仅开发服务器测试  
+npm run test:dev
+```
+
+### 代码质量保证
+- **TypeScript严格模式**: 类型安全保障
+- **ESLint规则**: 代码规范检查
+- **组件化架构**: 高内聚、低耦合设计
+- **自定义Hooks**: 逻辑复用和状态管理
+
+### 性能优化策略
+- **题库懒加载**: 按需加载，提升首屏速度
+- **图片智能处理**: 预加载 + 错误处理 + 响应式显示
+- **本地存储优化**: 智能缓存 + 数据压缩
+- **组件级优化**: 错误边界 + 性能监控
+
+## 🎯 项目亮点
+
+### 🏗️ 架构设计
+- **模块化组件**: 10+ 屏幕组件，3+ 自定义Hooks，完善的工具函数库
+- **类型安全**: 100% TypeScript覆盖，严格模式开发
+- **错误处理**: ErrorBoundary组件 + 全局错误捕获机制
+- **主题系统**: 多邻国风格配色，支持暗黑/浅色模式切换
+
+### 📊 数据与分析
+- **学习分析**: 可视化图表展示学习进度和掌握情况
+- **智能推荐**: 基于答题情况的个性化学习路径
+- **统计系统**: 多维度数据统计，支持导出学习报告
+
+### 🔄 持续集成
+- **自动化测试**: 涵盖功能测试、性能测试、构建测试
+- **测试报告**: 自动生成HTML/JSON格式的详细测试报告
+- **质量检查**: ESLint + TypeScript 双重代码质量保障
+
+### 🎮 用户体验
+- **响应式设计**: 完美适配移动端、平板、桌面设备
+- **流畅动画**: 丝滑的页面切换和交互反馈
+- **声音系统**: 可选的音效反馈，提升学习体验
+- **全屏模式**: 专注学习的沉浸式体验
+
+## 📄 开源协议
+
+本项目基于 MIT 协议开源，题库内容版权归原作者所有。
