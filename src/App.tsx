@@ -125,28 +125,7 @@ const App = () => {
   
   const containerRef = useRef(null);
 
-  // 加载所有可用题库（内置 + 自定义）
-  useEffect(() => {
-    const loadAvailableBanks = () => {
-      // 加载内置题库
-      const builtinBanks = Object.values(BUILTIN_QUESTION_BANKS);
-      
-      // 加载自定义题库
-      const customBanks = StorageHelper.getItem('questionBanks', []).map(bank => ({
-        id: bank.id,
-        name: bank.name,
-        category: 'custom',
-        color: '#9333ea',
-        description: bank.description || '自定义题库',
-        isCustom: true,
-        questions: bank.questions
-      }));
-      
-      setAvailableBanks([...builtinBanks, ...customBanks]);
-    };
-    
-    loadAvailableBanks();
-  }, [showBankManager]); // 当题库管理器关闭时重新加载
+  // 题库加载逻辑现在由 useQuestionBank hook 处理
 
 
   // 振动反馈函数
@@ -263,74 +242,13 @@ const App = () => {
     }
   }, [lastStudyDate]);
 
-  // 修改题库加载逻辑 - 支持自定义题库
+  // 题库加载逻辑现在由 useQuestionBank hook 处理
+  // 当用户切换题库时，使用hook的方法加载
   useEffect(() => {
-    const loadQuestionBank = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-        
-        const bank = availableBanks.find(b => b.id === currentBankId);
-        if (!bank) {
-          // 如果找不到当前选中的题库，尝试使用第一个可用题库
-          if (availableBanks.length > 0) {
-            setCurrentBankId(availableBanks[0].id);
-            return;
-          }
-          throw new Error('没有可用的题库');
-        }
-        
-        let questions;
-        if (bank.isCustom) {
-          // 自定义题库直接使用存储的题目
-          questions = bank.questions;
-        } else {
-          // 内置题库从模块加载
-          const module = await bank.module().catch(err => {
-            throw new Error(`题库模块加载失败: ${err.message}`);
-          });
-          
-          if (!module.questionBank) {
-            throw new Error('题库数据格式错误');
-          }
-          
-          questions = module.questionBank;
-        }
-        
-        // 验证题库
-        const validation = QuestionValidator.validateQuestionBank(questions);
-        if (!validation.valid) {
-          throw new Error(validation.error);
-        }
-        
-        setLoadedQuestionBank(questions);
-        
-        // 获取并设置题库统计
-        const stats = getQuestionStats(questions);
-        setQuestionStats(stats);
-        
-        // 加载题库特定的数据
-        const savedWrongQuestions = StorageHelper.getItem(`wrongQuestions_${currentBankId}`, []);
-        setWrongQuestions(savedWrongQuestions);
-        
-        const savedFavorites = StorageHelper.getItem(`favoriteQuestions_${currentBankId}`, []);
-        setFavoriteQuestions(savedFavorites);
-        
-        // 保存选择
-        StorageHelper.setItem('selectedQuestionBank', currentBankId);
-        
-        setLoading(false);
-      } catch (err) {
-        console.error('加载题库失败:', err);
-        setError(err.message || '题库加载失败，请刷新页面重试');
-        setLoading(false);
-      }
-    };
-    
-    if (availableBanks.length > 0) {
-      loadQuestionBank();
+    if (currentBankId && availableBanks.length > 0) {
+      questionBank.loadQuestionBank(currentBankId);
     }
-  }, [currentBankId, availableBanks]);
+  }, [currentBankId, availableBanks.length, questionBank.loadQuestionBank]);
 
   // 清理计时器
   useEffect(() => {
@@ -460,7 +378,7 @@ const App = () => {
       setSessionStartTime(Date.now());
       setCurrentQuestionStartTime(Date.now());
       stopStreakTimer();
-      setCurrentScreen('quiz');
+      navigateTo('quiz');
       setIsTransitioning(false);
     }, 300);
   }, [getFilteredQuestionBank, quizAmount, wrongQuestions, favoriteQuestions, loadedQuestionBank, playSound, stopStreakTimer]);
@@ -634,7 +552,7 @@ const App = () => {
         StorageHelper.setItem('studyHistory', newHistory);
         
         stopStreakTimer();
-        setCurrentScreen('results');
+        navigateTo('results');
       }
       setIsTransitioning(false);
     }, 300);
@@ -853,7 +771,7 @@ const App = () => {
 
         if (key === 'escape') {
           if (window.confirm('确定要退出当前练习吗？')) {
-            setCurrentScreen('home');
+            navigateTo('home');
           }
         }
       } catch (error) {
@@ -1209,7 +1127,7 @@ const App = () => {
                   playSound('click');
                   setCurrentBankId(bank.id);
                   setShowBankSwitcher(false);
-                  setCurrentScreen('home');
+                  navigateTo('home');
                   setCurrentQuestions([]);
                   setSelectedCategory('all');
                 }}
@@ -1281,7 +1199,7 @@ const App = () => {
                 onClick={() => {
                   playSound('click');
                   setShowBankSwitcher(false);
-                  setShowBankManager(true);
+                  toggleBankManager();
                 }}
                 className="w-full mb-3"
               >
@@ -1440,7 +1358,7 @@ const App = () => {
               icon={XCircle}
               onClick={() => {
                 if (window.confirm('确定要退出当前练习吗？')) {
-                  setCurrentScreen('home');
+                  navigateTo('home');
                   playSound('click');
                   triggerVibration([100]);
                 }
@@ -2085,7 +2003,7 @@ const App = () => {
             variant="primary"
             className="w-full"
             onClick={() => {
-              setCurrentScreen('home');
+              navigateTo('home');
               playSound('click');
             }}
           >
@@ -2131,7 +2049,7 @@ const App = () => {
           <Button 
             variant="ghost"
             icon={ChevronLeft}
-            onClick={() => setCurrentScreen('home')}
+            onClick={() => navigateTo('home')}
             className="mr-3"
           />
           <h2 className={`text-xl font-bold ${
@@ -2259,7 +2177,7 @@ const App = () => {
           <Button 
             variant="ghost"
             icon={ChevronLeft}
-            onClick={() => setCurrentScreen('home')}
+            onClick={() => navigateTo('home')}
             className="mr-3"
           />
           <h2 className={`text-xl font-bold ${
@@ -2415,7 +2333,7 @@ const App = () => {
           <Button 
             variant="ghost"
             icon={ChevronLeft}
-            onClick={() => setCurrentScreen('home')}
+            onClick={() => navigateTo('home')}
             className="mr-3"
           />
           <h2 className={`text-xl font-bold ${
@@ -2651,7 +2569,7 @@ const App = () => {
                 const timer = setTimeout(() => {
                   playSound('click');
                   triggerVibration([100, 50, 100, 50, 100]);
-                  setShowBankManager(true);
+                  toggleBankManager();
                 }, 3000);
                 setPressTimer(timer);
                 setIsPressing(true);
@@ -2674,7 +2592,7 @@ const App = () => {
                 const timer = setTimeout(() => {
                   playSound('click');
                   triggerVibration([100, 50, 100, 50, 100]);
-                  setShowBankManager(true);
+                  toggleBankManager();
                 }, 3000);
                 setPressTimer(timer);
                 setIsPressing(true);
@@ -2751,7 +2669,7 @@ const App = () => {
           <Button 
             variant="ghost"
             icon={ChevronLeft}
-            onClick={() => setCurrentScreen('home')}
+            onClick={() => navigateTo('home')}
             className="mr-3"
           />
           <h2 className={`text-xl font-bold ${
@@ -2870,7 +2788,7 @@ const App = () => {
               variant="primary"
               icon={BarChart3}
               onClick={() => {
-                setShowAnalytics(true);
+                toggleAnalytics();
                 playSound('click');
               }}
               className="w-full"
@@ -2984,7 +2902,7 @@ const App = () => {
             settings.darkMode ? 'text-gray-300' : 'text-gray-600'
           }`}>未找到题库</p>
           <button 
-            onClick={() => setShowBankManager(true)}
+            onClick={() => toggleBankManager()}
             className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors flex items-center"
           >
             <Plus size={18} className="mr-2" />
@@ -3188,7 +3106,7 @@ const App = () => {
                   ? 'bg-gray-700 text-gray-300 hover:bg-gray-600'
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
-              onClick={() => setCurrentScreen('studyPlan')}
+              onClick={() => navigateTo('home')} // studyPlan 功能集成在home中
             >
               学习计划
             </button>
@@ -3226,7 +3144,7 @@ const App = () => {
                 ? 'bg-gray-800 border border-gray-700 hover:bg-gray-750' 
                 : 'bg-white border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200'
             }`}
-            onClick={() => setCurrentScreen('favorites')}
+            onClick={() => navigateTo('home')} // favorites 功能集成在home中
           >
             <Star size={18} className={`mx-auto mb-1 ${
               settings.darkMode ? 'text-yellow-400' : 'text-yellow-500'
@@ -3241,7 +3159,7 @@ const App = () => {
                 ? 'bg-gray-800 border border-gray-700 hover:bg-gray-750' 
                 : 'bg-white border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200'
             }`}
-            onClick={() => setCurrentScreen('analysis')}
+            onClick={() => toggleAnalytics()} // 打开分析界面
           >
             <PieChart size={18} className={`mx-auto mb-1 ${
               settings.darkMode ? 'text-blue-400' : 'text-blue-500'
@@ -3256,7 +3174,7 @@ const App = () => {
                 ? 'bg-gray-800 border border-gray-700 hover:bg-gray-750' 
                 : 'bg-white border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200'
             }`}
-            onClick={() => setCurrentScreen('settings')}
+            onClick={() => navigateTo('settings')}
           >
             <Settings size={18} className={`mx-auto mb-1 ${
               settings.darkMode ? 'text-gray-400' : 'text-gray-600'
@@ -3516,18 +3434,8 @@ const App = () => {
           <Suspense fallback={<FullScreenLoader message="正在加载题库管理系统..." />}>
             <QuestionBankManager 
               onClose={() => {
-                setShowBankManager(false);
-                // 重新加载题库列表
-                const customBanks = StorageHelper.getItem('questionBanks', []).map(bank => ({
-                  id: bank.id,
-                  name: bank.name,
-                  category: 'custom',
-                  color: '#9333ea',
-                  description: bank.description || '自定义题库',
-                  isCustom: true,
-                  questions: bank.questions
-                }));
-                setAvailableBanks([...Object.values(BUILTIN_QUESTION_BANKS), ...customBanks]);
+                toggleBankManager();
+                // 题库列表会通过 useQuestionBank hook 自动重新加载
               }}
             />
           </Suspense>
@@ -3542,7 +3450,7 @@ const App = () => {
               currentStreak={currentStreak}
               maxStreak={maxStreak}
               colors={colors}
-              onClose={() => setShowAnalytics(false)}
+              onClose={() => toggleAnalytics()}
             />
           </Suspense>
         )}
