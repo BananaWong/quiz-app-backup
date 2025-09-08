@@ -170,7 +170,7 @@ export const questionBank = [
     answer: "A",
     category: "KUKA机器人配置",
     hasImage: true,
-    imagePath: "/images/kukarobot_mid_img13.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-mid_img13.jpg",
     imageDescription: "KUKA机器人信号配置界面图标",
     imagePlaceholder: "🔗 此题包含信号配置界面图标，需要参考图形选择正确的关联IO图标"
   },
@@ -187,7 +187,7 @@ export const questionBank = [
     answer: "B",
     category: "KUKA机器人配置",
     hasImage: true,
-    imagePath: "/images/kukarobot_mid_img14.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-mid_img14.jpg",
     imageDescription: "KUKA机器人信号配置界面图标",
     imagePlaceholder: "🔍 此题包含信号配置界面图标，需要参考图形选择正确的搜索IO图标"
   },
@@ -204,7 +204,7 @@ export const questionBank = [
     answer: "C",
     category: "KUKA机器人配置",
     hasImage: true,
-    imagePath: "/images/kukarobot_mid_img15.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-mid_img15.jpg",
     imageDescription: "KUKA机器人信号配置界面按钮",
     imagePlaceholder: "🔲 此题包含信号配置界面按钮，需要参考图形选择正确的显示/隐藏未关联IO按钮"
   },
@@ -221,7 +221,7 @@ export const questionBank = [
     answer: "D",
     category: "KUKA机器人配置",
     hasImage: true,
-    imagePath: "/images/kukarobot_mid_img16.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-mid_img16.jpg",
     imageDescription: "KUKA机器人信号配置界面按钮",
     imagePlaceholder: "✅ 此题包含信号配置界面按钮，需要参考图形选择正确的显示/隐藏已关联IO按钮"
   },
@@ -420,7 +420,7 @@ export const questionBank = [
     answer: "C",
     category: "机器人操作",
     hasImage: true,
-    imagePath: "/images/kukarobot_mid_img31.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-mid_img31.jpg",
     imageDescription: "KUKA机器人示教器按键图标",
     imagePlaceholder: "⌨️ 此题包含示教器按键图，需要参考图形识别按键功能"
   },
@@ -437,7 +437,7 @@ export const questionBank = [
     answer: "D",
     category: "机器人操作",
     hasImage: true,
-    imagePath: "/images/kukarobot_mid_img32.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-mid_img32.jpg",
     imageDescription: "KUKA机器人示教器停止按键图标",
     imagePlaceholder: "⏹️ 此题包含示教器停止按键图，需要参考图形识别按键功能"
   },
@@ -454,7 +454,7 @@ export const questionBank = [
     answer: "D",
     category: "机器人操作",
     hasImage: true,
-    imagePath: "/images/kukarobot_mid_img33.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-mid_img33.jpg",
     imageDescription: "KUKA机器人示教器逆向启动按键图标",
     imagePlaceholder: "⏪ 此题包含示教器逆向启动按键图，需要参考图形识别按键功能"
   },
@@ -471,7 +471,7 @@ export const questionBank = [
     answer: "D",
     category: "机器人操作",
     hasImage: true,
-    imagePath: "/images/kukarobot_mid_img34.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-mid_img34.jpg",
     imageDescription: "KUKA机器人示教器启动按键图标",
     imagePlaceholder: "▶️ 此题包含示教器启动按键图，需要参考图形识别按键功能"
   },
@@ -553,7 +553,7 @@ export const questionBank = [
     answer: "A",
     category: "KUKA机器人配置",
     hasImage: true,
-    imagePath: "/images/kukarobot_mid_img40.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-mid_img40.jpg",
     imageDescription: "KUKA机器人信号配置界面关联IO图标",
     imagePlaceholder: "🔗 此题包含信号配置界面图标，需要参考图形选择正确的关联IO图标"
   },
@@ -570,7 +570,7 @@ export const questionBank = [
     answer: "B",
     category: "KUKA机器人配置",
     hasImage: true,
-    imagePath: "/images/kukarobot_mid_img41.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-mid_img41.jpg",
     imageDescription: "KUKA机器人信号配置界面搜索IO图标",
     imagePlaceholder: "🔍 此题包含信号配置界面图标，需要参考图形选择正确的搜索IO图标"
   },
@@ -587,7 +587,7 @@ export const questionBank = [
     answer: "C",
     category: "KUKA机器人配置",
     hasImage: true,
-    imagePath: "/images/kukarobot_mid_img42.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-mid_img42.jpg",
     imageDescription: "KUKA机器人信号配置界面显示隐藏未关联IO按钮",
     imagePlaceholder: "🔲 此题包含信号配置界面按钮，需要参考图形选择正确的显示/隐藏未关联IO按钮"
   },
@@ -604,7 +604,7 @@ export const questionBank = [
     answer: "D",
     category: "KUKA机器人配置",
     hasImage: true,
-    imagePath: "/images/kukarobot_mid_img43.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-mid_img43.jpg",
     imageDescription: "KUKA机器人信号配置界面显示隐藏已关联IO按钮",
     imagePlaceholder: "✅ 此题包含信号配置界面按钮，需要参考图形选择正确的显示/隐藏已关联IO按钮"
   },
@@ -1024,7 +1024,7 @@ export const questionBank = [
     answer: "A",
     category: "KUKA机器人操作",
     hasImage: true,
-    imagePath: "/images/kukarobot_mid_img75.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-mid_img75.jpg",
     imageDescription: "KUKA机器人驱动装置状态显示",
     imagePlaceholder: "🔧 此题包含驱动装置状态显示图，需要参考图形理解状态含义"
   },
@@ -1067,7 +1067,7 @@ export const questionBank = [
     answer: "D",
     category: "KUKA机器人操作",
     hasImage: true,
-    imagePath: "/images/kukarobot_mid_img78.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-mid_img78.jpg",
     imageDescription: "KUKA机器人示教器启动按钮",
     imagePlaceholder: "▶️◀️ 此题包含示教器启动按钮图，需要参考图形识别按钮功能"
   },

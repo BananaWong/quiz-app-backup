@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { X, Upload, Download, Trash2, Eye, EyeOff, AlertCircle, CheckCircle, Plus, FileJson, Database, Edit, Save, Copy, Shield, Code } from 'lucide-react';
+import { X, Upload, Download, Trash2, Eye, EyeOff, AlertCircle, CheckCircle, FileJson, Database, Edit, Save, Shield, Code } from 'lucide-react';
 
 // 题库管理系统组件
 const QuestionBankManager = ({ onClose }) => {

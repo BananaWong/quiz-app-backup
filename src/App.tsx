@@ -1,7 +1,13 @@
-import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo, Suspense, lazy } from 'react';
 import { ChevronLeft, BookOpen, Shuffle, FileX2, CheckCircle, XCircle, Clock, Target, Award, Brain, Filter, BarChart3, Zap, Heart, Settings, Flame, Image, Download, FileText, PieChart, Calendar, Smartphone, Maximize, Moon, Sun, Star, StarOff, Volume2, VolumeX, Keyboard, Play, CalendarDays, Trophy, AlertCircle, Database, Plus } from 'lucide-react';
-import QuestionBankManager from './QuestionBankManager';
-import LearningAnalytics from './components/LearningAnalytics';
+
+// 懒加载大型组件
+const QuestionBankManager = lazy(() => import('./QuestionBankManager'));
+const LearningAnalytics = lazy(() => import('./components/LearningAnalytics'));
+import { useSoundSystem } from './hooks/useSoundSystem';
+import { CategoryStatsMap, OptionWithImage } from './types';
+import { FullScreenLoader } from './components/ui/LoadingSpinner';
+import { DevPerformanceMonitor } from './components/PerformanceMonitor';
 
 // 多邻国风格的舒适配色方案
 const COLORS = {
@@ -113,7 +119,6 @@ const COLORS = {
 
 // 颜色主题类型定义
 type ColorTheme = typeof COLORS.light;
-type ColorKey = keyof ColorTheme;
 
 // 按钮组件类型定义
 interface ButtonProps {
@@ -617,101 +622,12 @@ class QuestionValidator {
   }
 }
 
-// 增强的音效系统
-class SoundSystem {
-  constructor() {
-    this.audioContext = null;
-    this.enabled = true;
-    this.initialized = false;
-  }
-
-  async init() {
-    if (this.initialized) return;
-    
-    try {
-      this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-      this.initialized = true;
-    } catch (error) {
-      console.warn('音频上下文初始化失败:', error);
-      this.enabled = false;
-    }
-  }
-
-  async playTone(frequency, duration = 200, type = 'sine') {
-    if (!this.enabled || !this.audioContext) return;
-
-    try {
-      if (!this.initialized) {
-        await this.init();
-      }
-
-      if (this.audioContext.state === 'suspended') {
-        await this.audioContext.resume();
-      }
-
-      const oscillator = this.audioContext.createOscillator();
-      const gainNode = this.audioContext.createGain();
-
-      oscillator.connect(gainNode);
-      gainNode.connect(this.audioContext.destination);
-
-      oscillator.frequency.value = frequency;
-      oscillator.type = type;
-
-      gainNode.gain.setValueAtTime(0.1, this.audioContext.currentTime);
-      gainNode.gain.exponentialRampToValueAtTime(0.01, this.audioContext.currentTime + duration / 1000);
-
-      oscillator.start(this.audioContext.currentTime);
-      oscillator.stop(this.audioContext.currentTime + duration / 1000);
-    } catch (error) {
-      console.warn('播放音效失败:', error);
-      this.enabled = false;
-    }
-  }
-
-  playCorrect() {
-    this.playTone(800, 300);
-  }
-
-  playIncorrect() {
-    this.playTone(300, 500, 'square');
-  }
-
-  playClick() {
-    this.playTone(600, 100);
-  }
-
-  playStreak(level) {
-    const frequency = 600 + (level * 50);
-    this.playTone(frequency, 200);
-  }
-
-  setEnabled(enabled) {
-    this.enabled = enabled;
-  }
-
-  destroy() {
-    if (this.audioContext && this.audioContext.state !== 'closed') {
-      this.audioContext.close().catch(console.error);
-    }
-  }
-}
+// 类型守卫函数
+const isOptionWithImage = (option: unknown): option is OptionWithImage => {
+  return typeof option === 'object' && option !== null && 'text' in option;
+};
 
 // 图片助手类
-class ImageHelper {
-  static getQuestionImage(bankId, imageName) {
-    return `/images/${bankId}/${imageName}`;
-  }
-  
-  static preloadImage(src) {
-    return new Promise((resolve, reject) => {
-      const img = new Image();
-      img.onload = () => resolve(src);
-      img.onerror = () => reject(new Error(`Failed to load image: ${src}`));
-      img.src = src;
-    });
-  }
-}
 
 // 获取题目分类统计
 const getQuestionStats = (questionBank) => {
@@ -764,6 +680,9 @@ const debounce = (func, wait) => {
 
 // 主应用组件（集成题库管理系统）
 const App = () => {
+  // Hooks
+  const { playSound } = useSoundSystem();
+  
   // 应用状态
   const [loadedQuestionBank, setLoadedQuestionBank] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -779,7 +698,7 @@ const App = () => {
   const [isAnswered, setIsAnswered] = useState(false);
   const [quizAmount, setQuizAmount] = useState(10);
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [questionStats, setQuestionStats] = useState({});
+  const [questionStats, setQuestionStats] = useState<CategoryStatsMap>({});
   const [quizResults, setQuizResults] = useState({
     total: 0,
     correct: 0,
@@ -863,7 +782,6 @@ const App = () => {
   const [isFullscreen, setIsFullscreen] = useState(false);
   
   const containerRef = useRef(null);
-  const soundSystemRef = useRef(null);
 
   // 加载所有可用题库（内置 + 自定义）
   useEffect(() => {
@@ -888,34 +806,6 @@ const App = () => {
     loadAvailableBanks();
   }, [showBankManager]); // 当题库管理器关闭时重新加载
 
-  // 初始化音效系统
-  useEffect(() => {
-    soundSystemRef.current = new SoundSystem();
-    
-    const initAudioOnInteraction = () => {
-      if (soundSystemRef.current && !soundSystemRef.current.initialized) {
-        soundSystemRef.current.init();
-      }
-    };
-    
-    document.addEventListener('click', initAudioOnInteraction, { once: true });
-    document.addEventListener('touchstart', initAudioOnInteraction, { once: true });
-    
-    return () => {
-      if (soundSystemRef.current) {
-        soundSystemRef.current.destroy();
-      }
-      document.removeEventListener('click', initAudioOnInteraction);
-      document.removeEventListener('touchstart', initAudioOnInteraction);
-    };
-  }, []);
-
-  // 更新音效设置
-  useEffect(() => {
-    if (soundSystemRef.current) {
-      soundSystemRef.current.setEnabled(settings.enableSound);
-    }
-  }, [settings.enableSound]);
 
   // 振动反馈函数
   const triggerVibration = useCallback((pattern = [100]) => {
@@ -928,29 +818,6 @@ const App = () => {
     }
   }, [settings.enableVibration]);
 
-  // 音效播放函数
-  const playSound = useCallback((type, data = null) => {
-    if (!settings.enableSound || !soundSystemRef.current) return;
-    
-    try {
-      switch (type) {
-        case 'correct':
-          soundSystemRef.current.playCorrect();
-          break;
-        case 'incorrect':
-          soundSystemRef.current.playIncorrect();
-          break;
-        case 'click':
-          soundSystemRef.current.playClick();
-          break;
-        case 'streak':
-          soundSystemRef.current.playStreak(data || 1);
-          break;
-      }
-    } catch (error) {
-      console.warn('播放音效时出错:', error);
-    }
-  }, [settings.enableSound]);
 
   // 全屏模式处理
   const toggleFullscreen = useCallback(() => {
@@ -1019,7 +886,7 @@ const App = () => {
       if (savedDate) {
         const lastDate = new Date(savedDate);
         const todayDate = new Date(today);
-        const dayDiff = Math.floor((todayDate - lastDate) / (1000 * 60 * 60 * 24));
+        const dayDiff = Math.floor((todayDate.getTime() - lastDate.getTime()) / (1000 * 60 * 60 * 24));
         
         if (dayDiff === 1) {
           setStudyStreak(savedStreak);
@@ -1931,18 +1798,18 @@ const App = () => {
                     ? 'text-white'
                     : settings.darkMode ? 'text-gray-100' : 'text-gray-900'
                 }`}>
-                  {key}. {option.text || ''}
+                  {key}. {isOptionWithImage(option) ? option.text : String(option)}
                 </span>
               </div>
-              {option.image && (
+              {isOptionWithImage(option) && option.image && (
                 <div className={`mt-2 p-2 rounded-lg ${
                   isAnswered && (userAnswer === key || question.answer === key)
                     ? 'bg-white/20'
                     : settings.darkMode ? 'bg-gray-900' : 'bg-gray-100'
                 }`}>
                   <img 
-                    src={`/images/${currentBankId}/${option.image}`}
-                    alt={option.imageDescription || `选项${key}`}
+                    src={`/images/questionbank/${(option as OptionWithImage).image}`}
+                    alt={(option as OptionWithImage).imageDescription || `选项${key}`}
                     className="w-full max-h-32 object-contain rounded"
                     onError={(e) => {
                       e.target.style.display = 'none';
@@ -1958,7 +1825,7 @@ const App = () => {
                         ? 'text-white/80'
                         : settings.darkMode ? 'text-gray-400' : 'text-gray-500'
                     }`}>
-                      {option.imageDescription || '图片加载失败'}
+                      {(option as OptionWithImage).imageDescription || '图片加载失败'}
                     </p>
                   </div>
                 </div>
@@ -2488,21 +2355,21 @@ const App = () => {
                                 ? settings.darkMode ? 'text-white' : 'text-blue-700'
                                 : settings.darkMode ? 'text-gray-100' : 'text-gray-900'
                           }`}>
-                            {key}. {option.text || ''}
+                            {key}. {isOptionWithImage(option) ? option.text : String(option)}
                           </span>
                           {multipleAnswers.includes(key) && !isAnswered && (
                             <CheckCircle size={16} className={settings.darkMode ? 'text-blue-400' : 'text-blue-600'} />
                           )}
                         </div>
-                        {option.image && (
+                        {isOptionWithImage(option) && option.image && (
                           <div className={`mt-2 p-2 rounded-lg ${
                             isAnswered && (multipleAnswers.includes(key) || question.answer.includes(key))
                               ? 'bg-white/20'
                               : settings.darkMode ? 'bg-gray-900' : 'bg-gray-100'
                           }`}>
                             <img
-                              src={`/images/${currentBankId}/${option.image}`}
-                              alt={option.imageDescription || `选项${key}`}
+                              src={`/images/questionbank/${(option as OptionWithImage).image}`}
+                              alt={(option as OptionWithImage).imageDescription || `选项${key}`}
                               className="w-full max-h-32 object-contain rounded"
                               onError={(e) => {
                                 e.target.style.display = 'none';
@@ -2518,7 +2385,7 @@ const App = () => {
                                   ? 'text-white/80'
                                   : settings.darkMode ? 'text-gray-400' : 'text-gray-500'
                               }`}>
-                                {option.imageDescription || '图片加载失败'}
+                                {(option as OptionWithImage).imageDescription || '图片加载失败'}
                               </p>
                             </div>
                           </div>
@@ -2565,7 +2432,7 @@ const App = () => {
                       <span className="flex items-center justify-between">
                         <span>
                           <span className="font-bold mr-2 text-base">{key}.</span>
-                          {value}
+                          {String(value)}
                         </span>
                         {multipleAnswers.includes(key) && !isAnswered && (
                           <CheckCircle size={16} className={settings.darkMode ? 'text-blue-400' : 'text-blue-600'} />
@@ -2681,7 +2548,7 @@ const App = () => {
                     <span className="flex items-center justify-between">
                       <span>
                         <span className="font-bold mr-2 text-base">{key}.</span>
-                        {value}
+                        {String(value)}
                       </span>
                       <span className="text-xs opacity-70">
                         ({['A', 'B', 'C', 'D'].indexOf(key) + 1}/{key})
@@ -4304,36 +4171,43 @@ const App = () => {
         
         {/* 题库管理系统 */}
         {showBankManager && (
-          <QuestionBankManager 
-            onClose={() => {
-              setShowBankManager(false);
-              // 重新加载题库列表
-              const customBanks = StorageHelper.getItem('questionBanks', []).map(bank => ({
-                id: bank.id,
-                name: bank.name,
-                category: 'custom',
-                color: '#9333ea',
-                description: bank.description || '自定义题库',
-                isCustom: true,
-                questions: bank.questions
-              }));
-              setAvailableBanks([...Object.values(BUILTIN_QUESTION_BANKS), ...customBanks]);
-            }}
-          />
+          <Suspense fallback={<FullScreenLoader message="正在加载题库管理系统..." />}>
+            <QuestionBankManager 
+              onClose={() => {
+                setShowBankManager(false);
+                // 重新加载题库列表
+                const customBanks = StorageHelper.getItem('questionBanks', []).map(bank => ({
+                  id: bank.id,
+                  name: bank.name,
+                  category: 'custom',
+                  color: '#9333ea',
+                  description: bank.description || '自定义题库',
+                  isCustom: true,
+                  questions: bank.questions
+                }));
+                setAvailableBanks([...Object.values(BUILTIN_QUESTION_BANKS), ...customBanks]);
+              }}
+            />
+          </Suspense>
         )}
         
         {/* 学习分析系统 */}
         {showAnalytics && (
-          <LearningAnalytics
-            studyHistory={studyHistory}
-            answerTimes={answerTimes}
-            currentStreak={currentStreak}
-            maxStreak={maxStreak}
-            colors={colors}
-            onClose={() => setShowAnalytics(false)}
-          />
+          <Suspense fallback={<FullScreenLoader message="正在加载学习分析系统..." />}>
+            <LearningAnalytics
+              studyHistory={studyHistory}
+              answerTimes={answerTimes}
+              currentStreak={currentStreak}
+              maxStreak={maxStreak}
+              colors={colors}
+              onClose={() => setShowAnalytics(false)}
+            />
+          </Suspense>
         )}
       </div>
+      
+      {/* 开发环境性能监控 */}
+      <DevPerformanceMonitor />
     </ErrorBoundary>
   );
 };

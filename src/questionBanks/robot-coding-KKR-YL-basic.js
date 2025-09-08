@@ -1184,7 +1184,7 @@ export const questionBank = [
     answer: "B",
     category: "系统界面",
     hasImage: true,
-    imagePath: "/images/kukarobot_easy_img91.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-basic_img91.jpg",
     imageDescription: "基坐标系图标选择题",
     imagePlaceholder: "🤖 此题包含基坐标系图标图片"
   },
@@ -2696,7 +2696,7 @@ export const questionBank = [
     answer: "B",
     category: "运动指令",
     hasImage: true,
-    imagePath: "/images/kukarobot_easy_img207.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-basic_img207.jpg",
     imageDescription: "CIRC指令过渡点示意图",
     imagePlaceholder: "🤖 此题包含CIRC指令过渡点示意图"
   },
@@ -2817,7 +2817,7 @@ export const questionBank = [
     answer: "C",
     category: "运动控制",
     hasImage: true,
-    imagePath: "/images/kukarobot_easy_img216.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-basic_img216.jpg",
     imageDescription: "插补模式选择界面",
     imagePlaceholder: "🤖 此题包含插补模式选择界面图片"
   },
@@ -2834,7 +2834,7 @@ export const questionBank = [
     answer: "C",
     category: "运动控制",
     hasImage: true,
-    imagePath: "/images/kukarobot_easy_img217.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-basic_img217.jpg",
     imageDescription: "姿态引导选择界面",
     imagePlaceholder: "🤖 此题包含姿态引导选择界面图片"
   },
@@ -2981,7 +2981,7 @@ export const questionBank = [
     answer: "A",
     category: "输入输出",
     hasImage: true,
-    imagePath: "/images/kukarobot_easy_img228.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-basic_img228.jpg",
     imageDescription: "信号输入框界面",
     imagePlaceholder: "🤖 此题包含信号输入框界面图片"
   },
@@ -3128,7 +3128,7 @@ export const questionBank = [
     answer: "A",
     category: "伺服控制",
     hasImage: true,
-    imagePath: "/images/kukarobot_easy_img239.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-basic_img239.jpg",
     imageDescription: "伺服驱动器输出脉冲相位关系图",
     imagePlaceholder: "🤖 此题包含伺服驱动器脉冲相位关系图"
   },
@@ -4107,7 +4107,7 @@ export const questionBank = [
     answer: "B",
     category: "程序执行",
     hasImage: true,
-    imagePath: "/images/kukarobot_easy_img314.jpg",
+    imagePath: "/images/questionbank/robot-coding-KKR-YL-basic_img314.jpg",
     imageDescription: "程序语句指针状态显示图",
     imagePlaceholder: "🤖 此题包含程序语句指针状态显示图"
   },

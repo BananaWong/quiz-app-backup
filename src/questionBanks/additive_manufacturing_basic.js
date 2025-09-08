@@ -3420,7 +3420,23 @@ export const questionBank = [
     answer: "B",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img268.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img268.jpg",
+    imageDescription: "工程制图中线面投影关系示意图",
+    imagePlaceholder: "📐 此题包含几何投影图，需要参考图形理解线面关系"
+  },  {
+    id: 269,
+    type: "single_choice",
+    question: "选择正确的左视图。",
+    options: {
+      A: "图A",
+      B: "图B",
+      C: "图C",
+      D: "图D"
+    },
+    answer: "D",
+    category: "技术基础",
+    hasImage: true,
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img269.jpg",
     imageDescription: "工程制图中线面投影关系示意图",
     imagePlaceholder: "📐 此题包含几何投影图，需要参考图形理解线面关系"
   },
@@ -3437,7 +3453,7 @@ export const questionBank = [
     answer: "B",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img270.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img270.jpg",
     imageDescription: "投影法图纸示例",
     imagePlaceholder: "📐 此题包含投影法图纸，需要参考图形判断投影类型"
   },
@@ -3454,7 +3470,7 @@ export const questionBank = [
     answer: "B",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img271.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img271.jpg",
     imageDescription: "投影法对比图",
     imagePlaceholder: "📐 此题包含投影法对比图，需要参考图形选择正投影法"
   },
@@ -3471,7 +3487,7 @@ export const questionBank = [
     answer: "C",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img272.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img272.jpg",
     imageDescription: "三视图与立体图对应关系",
     imagePlaceholder: "📐 此题包含三视图与立体图对应关系，需要参考图形选择正确答案"
   },
@@ -3488,7 +3504,7 @@ export const questionBank = [
     answer: "D",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img273.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img273.jpg",
     imageDescription: "三视图与立体图对应关系",
     imagePlaceholder: "📐 此题包含三视图与立体图对应关系，需要参考图形选择正确答案"
   },
@@ -3505,7 +3521,7 @@ export const questionBank = [
     answer: "B",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img274.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img274.jpg",
     imageDescription: "立体图与三视图对应关系",
     imagePlaceholder: "📐 此题包含立体图与三视图对应关系，需要参考图形选择正确答案"
   },
@@ -3522,7 +3538,7 @@ export const questionBank = [
     answer: "B",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img275.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img275.jpg",
     imageDescription: "三视图主视图选择",
     imagePlaceholder: "📐 此题包含三视图选择，需要参考图形选择正确的主视图"
   },
@@ -3539,7 +3555,7 @@ export const questionBank = [
     answer: "B",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img276.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img276.jpg",
     imageDescription: "主俯视图与左视图对应关系",
     imagePlaceholder: "📐 此题包含主俯视图与左视图对应关系，需要参考图形选择正确的左视图"
   },
@@ -3556,7 +3572,7 @@ export const questionBank = [
     answer: "D",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img277.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img277.jpg",
     imageDescription: "断面图画法示例",
     imagePlaceholder: "📐 此题包含断面图画法示例，需要参考图形选择正确的画法"
   },
@@ -3573,7 +3589,7 @@ export const questionBank = [
     answer: "D",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img278.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img278.jpg",
     imageDescription: "剖视图表达正确性比较",
     imagePlaceholder: "📐 此题包含剖视图表达正确性比较，需要参考图形选择不正确的表达"
   },
@@ -3590,7 +3606,7 @@ export const questionBank = [
     answer: "A",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img279.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img279.jpg",
     imageDescription: "键连接画法示例",
     imagePlaceholder: "📐 此题包含键连接画法示例，需要参考图形选择正确的画法"
   },
@@ -3620,7 +3636,7 @@ export const questionBank = [
     answer: "B",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img281.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img281.jpg",
     imageDescription: "内外螺纹旋合画法",
     imagePlaceholder: "📐 此题包含内外螺纹旋合画法，需要参考图形选择正确的画法"
   },
@@ -3637,7 +3653,7 @@ export const questionBank = [
     answer: "A",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img282.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img282.jpg",
     imageDescription: "尺寸标注合理性比较",
     imagePlaceholder: "📐 此题包含尺寸标注合理性比较，需要参考图形选择最合理的标注"
   },
@@ -3654,7 +3670,7 @@ export const questionBank = [
     answer: "A",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img283.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img283.jpg",
     imageDescription: "球阀扳手位置示意图",
     imagePlaceholder: "⚙️ 此题包含球阀扳手位置示意图，需要参考图形判断阻断流动的位置"
   },
@@ -3697,7 +3713,7 @@ export const questionBank = [
     answer: "A",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img286.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img286.jpg",
     imageDescription: "相贯线示意图",
     imagePlaceholder: "📐 此题包含相贯线示意图，需要参考图形识别红色部分"
   },
@@ -3714,7 +3730,7 @@ export const questionBank = [
     answer: "A",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img287.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img287.jpg",
     imageDescription: "主视图轴段投影",
     imagePlaceholder: "📐 此题包含主视图轴段投影，需要参考图形理解矩形线框含义"
   },
@@ -3744,7 +3760,7 @@ export const questionBank = [
     answer: "C",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img289.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img289.jpg",
     imageDescription: "草图轮廓封闭性示例",
     imagePlaceholder: "🖥️ 此题包含草图轮廓封闭性示例，需要参考图形选择不封闭的轮廓"
   },
@@ -3761,7 +3777,7 @@ export const questionBank = [
     answer: "A",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img290.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img290.jpg",
     imageDescription: "花瓶轮廓草图修改",
     imagePlaceholder: "🏺 此题包含花瓶轮廓草图修改示例，需要参考图形选择修改命令"
   },
@@ -3778,7 +3794,7 @@ export const questionBank = [
     answer: "B",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img291.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img291.jpg",
     imageDescription: "二维草图轮廓拉伸可行性",
     imagePlaceholder: "📐 此题包含二维草图轮廓拉伸可行性示例，需要参考图形选择可拉伸的轮廓"
   },
@@ -3795,7 +3811,7 @@ export const questionBank = [
     answer: "B",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img292.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img292.jpg",
     imageDescription: "草图轮廓拉伸限制示例",
     imagePlaceholder: "📐 此题包含草图轮廓拉伸限制示例，需要参考图形选择不能拉伸的轮廓"
   },
@@ -3812,7 +3828,7 @@ export const questionBank = [
     answer: "B",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img293.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img293.jpg",
     imageDescription: "花瓶轮廓草图修改方法",
     imagePlaceholder: "🏺 此题包含花瓶轮廓草图修改方法示例，需要参考图形选择修改命令"
   },
@@ -3829,7 +3845,7 @@ export const questionBank = [
     answer: "B",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img294.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img294.jpg",
     imageDescription: "草图轮廓封闭性判断",
     imagePlaceholder: "📐 此题包含草图轮廓封闭性判断示例，需要参考图形选择不封闭的轮廓"
   },
@@ -3859,7 +3875,7 @@ export const questionBank = [
     answer: "A",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img296.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img296.jpg",
     imageDescription: "花瓶模型旋转轴线",
     imagePlaceholder: "🏺 此题包含花瓶模型旋转轴线示例，需要参考图形选择正确的旋转轴线"
   },
@@ -3876,7 +3892,7 @@ export const questionBank = [
     answer: "D",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img297.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img297.jpg",
     imageDescription: "圆环体内孔半径修改",
     imagePlaceholder: "🔧 此题包含圆环体内孔半径修改示例，需要参考图形选择修改命令"
   },
@@ -3893,7 +3909,7 @@ export const questionBank = [
     answer: "A",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img298.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img298.jpg",
     imageDescription: "五角星草图修改",
     imagePlaceholder: "⭐ 此题包含五角星草图修改示例，需要参考图形选择修改命令"
   },
@@ -3910,7 +3926,7 @@ export const questionBank = [
     answer: "B",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img299.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img299.jpg",
     imageDescription: "模型与草图对应关系",
     imagePlaceholder: "🔧 此题包含模型与草图对应关系示例，需要参考图形选择正确的草图"
   },
@@ -3927,7 +3943,7 @@ export const questionBank = [
     answer: "C",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img300.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img300.jpg",
     imageDescription: "圆台绘制方法",
     imagePlaceholder: "🔺 此题包含圆台绘制方法示例，需要参考图形选择正确的命令"
   },
@@ -3970,7 +3986,7 @@ export const questionBank = [
     answer: "B",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img303.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img303.jpg",
     imageDescription: "飞碟探照灯阵列方式",
     imagePlaceholder: "🛸 此题包含飞碟探照灯阵列方式示例，需要参考图形选择阵列方式"
   },
@@ -3987,7 +4003,7 @@ export const questionBank = [
     answer: "B",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/{addit1}img304.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_basic_img304.jpg",
     imageDescription: "直梯变螺旋效果",
     imagePlaceholder: "🌀 此题包含直梯变螺旋效果示例，需要参考图形选择变形命令"
   },

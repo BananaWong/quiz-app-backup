@@ -1,10 +1,16 @@
 // 项目类型定义文件
 
+export interface OptionWithImage {
+  text: string;
+  image?: string;
+  imageDescription?: string;
+}
+
 export interface Question {
   id: number;
   type: 'single_choice' | 'multiple_choice' | 'true_false' | 'fill_blank' | 'short_answer';
   question: string;
-  options?: Record<string, string | { text: string; image?: string; imageDescription?: string }>;
+  options?: Record<string, string | OptionWithImage>;
   answer: string | string[];
   category?: string;
   hasImage?: boolean;
@@ -63,6 +69,18 @@ export interface QuestionStats {
     correct: number;
     lastAttempted: string;
   };
+}
+
+export interface CategoryStats {
+  total: number;
+  correct?: number;
+  easy: number;
+  medium: number;
+  hard: number;
+}
+
+export interface CategoryStatsMap {
+  [category: string]: CategoryStats;
 }
 
 export interface LearningAnalyticsProps {

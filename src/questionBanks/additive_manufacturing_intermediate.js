@@ -53,7 +53,7 @@ export const questionBank = [
     answer: "D",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img4.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img4.jpg",
     imageDescription: "不倒翁结构示意图",
     imagePlaceholder: "🎭 此题包含不倒翁结构图，需要参考图形理解重心位置"
   },
@@ -70,7 +70,7 @@ export const questionBank = [
     answer: "A",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img5.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img5.jpg",
     imageDescription: "虫虫沙发设计图",
     imagePlaceholder: "🪑 此题包含虫虫沙发设计图，需要参考图形理解阵列方式"
   },
@@ -113,7 +113,7 @@ export const questionBank = [
     answer: "B",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img8.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img8.jpg",
     imageDescription: "麻花灯座模型",
     imagePlaceholder: "💡 此题包含麻花灯座模型图，需要参考图形理解变形命令"
   },
@@ -130,7 +130,7 @@ export const questionBank = [
     answer: "B",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img9.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img9.jpg",
     imageDescription: "小熊饰品模型",
     imagePlaceholder: "🧸 此题包含小熊饰品模型图，需要参考图形理解对称操作"
   },
@@ -173,7 +173,7 @@ export const questionBank = [
     answer: "B",
     category: "安全规范",
     hasImage: true,
-    imagePath: "/images/img12.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img12.jpg",
     imageDescription: "3D打印汽车斯特拉迪",
     imagePlaceholder: "🚗 此题包含3D打印汽车图片，需要参考图形理解应用领域"
   },
@@ -294,7 +294,7 @@ export const questionBank = [
     answer: "A",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img21.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img21.jpg",
     imageDescription: "圆柱变形示意图",
     imagePlaceholder: "🔄 此题包含圆柱变形示意图，需要参考图形理解变形命令"
   },
@@ -311,7 +311,7 @@ export const questionBank = [
     answer: "A",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img22.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img22.jpg",
     imageDescription: "六面体槽位变化示意图",
     imagePlaceholder: "📦 此题包含六面体槽位变化图，需要参考图形理解移动操作"
   },
@@ -341,7 +341,7 @@ export const questionBank = [
     answer: "A",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img24.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img24.jpg",
     imageDescription: "圣诞树模型",
     imagePlaceholder: "🎄 此题包含圣诞树模型图，需要参考图形理解基本实体命令"
   },
@@ -358,7 +358,7 @@ export const questionBank = [
     answer: "C",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img25.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img25.jpg",
     imageDescription: "六面体与圆锥体组合运算示意图",
     imagePlaceholder: "🔺 此题包含组合运算示意图，需要参考图形理解布尔运算"
   },
@@ -388,7 +388,7 @@ export const questionBank = [
     answer: "C",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img27.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img27.jpg",
     imageDescription: "圆柱体笔筒造型",
     imagePlaceholder: "🖊️ 此题包含圆柱体笔筒造型图，需要参考图形理解抽壳命令"
   },
@@ -405,7 +405,7 @@ export const questionBank = [
     answer: "C",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img28.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img28.jpg",
     imageDescription: "锋利边缘处理示意图",
     imagePlaceholder: "⚠️ 此题包含锋利边缘处理图，需要参考图形理解倒圆角命令"
   },
@@ -422,7 +422,7 @@ export const questionBank = [
     answer: "B",
     category: "材料工程",
     hasImage: true,
-    imagePath: "/images/img29.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img29.jpg",
     imageDescription: "桃花图案花瓶",
     imagePlaceholder: "🌸 此题包含桃花图案花瓶图，需要参考图形理解贴图功能"
   },
@@ -439,7 +439,7 @@ export const questionBank = [
     answer: "B",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img30.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img30.jpg",
     imageDescription: "扭曲变形对比图",
     imagePlaceholder: "🌪️ 此题包含扭曲变形对比图，需要参考图形理解扭曲命令"
   },
@@ -560,7 +560,7 @@ export const questionBank = [
     answer: "C",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img39.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img39.jpg",
     imageDescription: "个性化笔筒设计",
     imagePlaceholder: "✏️ 此题包含个性化笔筒设计图，需要参考图形理解文字添加"
   },
@@ -577,7 +577,7 @@ export const questionBank = [
     answer: "B",
     category: "材料工程",
     hasImage: true,
-    imagePath: "/images/img40.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img40.jpg",
     imageDescription: "3D打印发动机涡轮",
     imagePlaceholder: "⚙️ 此题包含3D打印发动机涡轮图，需要参考图形理解材料选择"
   },
@@ -607,7 +607,7 @@ export const questionBank = [
     answer: "C",
     category: "安全规范",
     hasImage: true,
-    imagePath: "/images/img42.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img42.jpg",
     imageDescription: "3D打印可食用糖果",
     imagePlaceholder: "🍬 此题包含3D打印可食用糖果图，需要参考图形理解应用领域"
   },
@@ -663,7 +663,7 @@ export const questionBank = [
     answer: "A",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img46.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img46.jpg",
     imageDescription: "五角星草图",
     imagePlaceholder: "⭐ 此题包含五角星草图图，需要参考图形理解拉伸条件"
   },
@@ -693,7 +693,7 @@ export const questionBank = [
     answer: "A",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img48.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img48.jpg",
     imageDescription: "射箭草图",
     imagePlaceholder: "🏹 此题包含射箭草图图，需要参考图形理解连通性检测"
   },
@@ -710,7 +710,7 @@ export const questionBank = [
     answer: "D",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img49.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img49.jpg",
     imageDescription: "轮廓圆角处理对比图",
     imagePlaceholder: "🔄 此题包含轮廓圆角处理对比图，需要参考图形理解圆角命令"
   },
@@ -727,7 +727,7 @@ export const questionBank = [
     answer: "C",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img50.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img50.jpg",
     imageDescription: "草图偏移对比图",
     imagePlaceholder: "📏 此题包含草图偏移对比图，需要参考图形理解偏移命令"
   },
@@ -744,7 +744,7 @@ export const questionBank = [
     answer: "C",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img51.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img51.jpg",
     imageDescription: "圆柱体阵列排列示意图",
     imagePlaceholder: "🔵 此题包含圆柱体阵列排列图，需要参考图形理解阵列命令"
   },
@@ -774,7 +774,7 @@ export const questionBank = [
     answer: "A",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img53.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img53.jpg",
     imageDescription: "球体内部文字显示对比图",
     imagePlaceholder: "🎵 此题包含球体内部文字显示对比图，需要参考图形理解显示模式"
   },
@@ -791,7 +791,7 @@ export const questionBank = [
     answer: "B",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img54.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img54.jpg",
     imageDescription: "杯子主体造型分解图",
     imagePlaceholder: "☕ 此题包含杯子主体造型分解图，需要参考图形理解布尔运算"
   },
@@ -821,7 +821,7 @@ export const questionBank = [
     answer: "C",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img56.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img56.jpg",
     imageDescription: "古建筑亭子设计",
     imagePlaceholder: "🏛️ 此题包含古建筑亭子设计图，需要参考图形理解飞檐设计"
   },
@@ -851,7 +851,7 @@ export const questionBank = [
     answer: "A",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/img58.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img58.jpg",
     imageDescription: "螺旋花架结构设计",
     imagePlaceholder: "🌸 此题包含螺旋花架结构设计图，需要参考图形理解力学原理"
   },
@@ -868,7 +868,7 @@ export const questionBank = [
     answer: "C",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img59.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img59.jpg",
     imageDescription: "火箭模型设计",
     imagePlaceholder: "🚀 此题包含火箭模型设计图，需要参考图形理解文字添加"
   },
@@ -885,7 +885,7 @@ export const questionBank = [
     answer: "B",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img60.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img60.jpg",
     imageDescription: "花瓶轮廓绘制示意图",
     imagePlaceholder: "🏺 此题包含花瓶轮廓绘制示意图，需要参考图形理解曲线绘制"
   },
@@ -902,7 +902,7 @@ export const questionBank = [
     answer: "A",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img61.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img61.jpg",
     imageDescription: "小熊存钱罐设计",
     imagePlaceholder: "🐻 此题包含小熊存钱罐设计图，需要参考图形理解移动命令"
   },
@@ -919,7 +919,7 @@ export const questionBank = [
     answer: "B",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img62.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img62.jpg",
     imageDescription: "三个摞起来的正方体",
     imagePlaceholder: "📦 此题包含三个摞起来的正方体图，需要参考图形理解视图变换"
   },
@@ -936,7 +936,7 @@ export const questionBank = [
     answer: "A",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img63.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img63.jpg",
     imageDescription: "计数器算珠架设计",
     imagePlaceholder: "🧮 此题包含计数器算珠架设计图，需要参考图形理解阵列方式"
   },
@@ -953,7 +953,7 @@ export const questionBank = [
     answer: "D",
     category: "技术基础",
     hasImage: true,
-    imagePath: "/images/img64.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img64.jpg",
     imageDescription: "树形书架设计",
     imagePlaceholder: "🌳 此题包含树形书架设计图，需要参考图形理解仿生设计"
   },
@@ -970,7 +970,7 @@ export const questionBank = [
     answer: "C",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img65.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img65.jpg",
     imageDescription: "椅子座面边缘处理",
     imagePlaceholder: "🪑 此题包含椅子座面边缘处理图，需要参考图形理解圆角处理"
   },
@@ -987,7 +987,7 @@ export const questionBank = [
     answer: "C",
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img66.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img66.jpg",
     imageDescription: "巧克力螺旋模型",
     imagePlaceholder: "🍫 此题包含巧克力螺旋模型图，需要参考图形理解扭曲命令"
   },
@@ -1462,7 +1462,7 @@ export const questionBank = [
     answer: ["A", "B", "C", "D"],
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img414.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img414.jpg",
     imageDescription: "蛋椅模型圆角设计",
     imagePlaceholder: "🪑 此题包含蛋椅模型图，需要参考图形理解圆角功能"
   },
@@ -1479,7 +1479,7 @@ export const questionBank = [
     answer: ["A", "B", "D"],
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img415.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img415.jpg",
     imageDescription: "生日礼物盒草图设计",
     imagePlaceholder: "🎁 此题包含生日礼物盒草图设计图，需要参考图形理解草图操作"
   },
@@ -1496,7 +1496,7 @@ export const questionBank = [
     answer: ["A", "B"],
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img416.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img416.jpg",
     imageDescription: "茶壶把手扫掠特征",
     imagePlaceholder: "🫖 此题包含茶壶把手扫掠特征图，需要参考图形理解扫掠命令"
   },
@@ -1513,7 +1513,7 @@ export const questionBank = [
     answer: ["A", "B", "D"],
     category: "软件应用",
     hasImage: true,
-    imagePath: "/images/img417.jpg",
+    imagePath: "/images/questionbank/additive_manufacturing_intermediate_img417.jpg",
     imageDescription: "仿生家具设计案例",
     imagePlaceholder: "🐸 此题包含仿生家具设计案例图，需要参考图形理解仿生设计"
   },
